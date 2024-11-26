@@ -1,0 +1,5 @@
+url: 47.97.176.174 #47.97.176.174 localhost
+userName: root
+password: zjc123456  #zjc123456 20030501
+dbname: carbon   #carbon chainmaker_dev
+post: 3306

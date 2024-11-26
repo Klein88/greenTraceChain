@@ -1,0 +1,688 @@
+Load handler[save] -> [*Test.SaveTest] 
+Load handler[GetTxCount] -> [*Browser.GetTxCount] 
+Load handler[AToBTransaction] -> [*contract.AToBTransaction] 
+Load handler[DAPExamineForCE] -> [*contract.DAPExamineForCE] 
+Load handler[CancelTransaction] -> [*EP.CancelTransaction] 
+Load handler[APRegisiter] -> [*AP.APRegisiter] 
+Load handler[GetNodeCount] -> [*Browser.GetNodeCount] 
+Load handler[APRegisiterForDAPAndTPRP] -> [*AP.APRegisiterForDAPAndTPRP] 
+Load handler[SearchAllTransactionData] -> [*AP.SearchAllTransactionData] 
+Load handler[SearchCEById] -> [*contract.SearchCEById] 
+Load handler[TPRPDistributeCredit] -> [*TPRP.TPRPToExamineRegisiter] 
+Load handler[DAPRegisiter] -> [*DAP.DAPRegisiter] 
+Load handler[GetFileById] -> [*DAP.GetFileById] 
+Load handler[CalculationForPGE] -> [*contract.CalculationForPGE] 
+Load handler[GetCompanyByCompanyId] -> [*EP.GetCompanyByCompanyId] 
+Load handler[GetCompanyTransactionByCompanyId] -> [*EP.GetCompanyTransactionByCompanyId] 
+Load handler[ResumingTransaction] -> [*EP.ResumingTransaction] 
+Load handler[GetOrgCount] -> [*Browser.GetOrgCount] 
+Load handler[APSearchCoin] -> [*contract.APSearchCoin] 
+Load handler[CreateCompany] -> [*EP.CompanyCreate] 
+Load handler[CompanyLogin] -> [*EP.CompanyLogin] 
+Load handler[GetAllTransactionList] -> [*EP.GetTransactionList] 
+Load handler[GetOpenTransactionList] -> [*EP.GetOpenTransactionList] 
+Load handler[GetBlockList] -> [*Browser.GetBlockList] 
+Load handler[GetContractList] -> [*Browser.GetContractList] 
+Load handler[APReviewFailed] -> [*AP.APReviewFailed] 
+Load handler[SearchPGEById] -> [*contract.SearchPGEById] 
+Load handler[SearchUserCarbonInfo] -> [*contract.SearchUserCarbonCoinAndCredit] 
+Load handler[GetCloseTransactionList] -> [*EP.GetCloseTransactionList] 
+Load handler[TxIdToSearchTx] -> [*Browser.TxIdToSearchTx] 
+Load handler[APDistributeCoin] -> [*contract.APDistributeCoin] 
+Load handler[GetAllTransactionData] -> [*DAP.GetAllTransactionData] 
+Load handler[DAPExamineForPGE] -> [*contract.DAPExamineForPGE] 
+Load handler[GetCancelTransactionList] -> [*EP.GetCancelTransactionList] 
+Load handler[GetHeight] -> [*Browser.GetHeight] 
+Load handler[GetTransactionListFromBrowser] -> [*Browser.GetTransactionListFromBrowser] 
+Load handler[SearchCompanyInfo] -> [*EP.SearchCompanyInfo] 
+Load handler[GetCompanyList] -> [*EP.GetCompanyList] 
+Load handler[CalculationForCE] -> [*contract.CalculationForCE] 
+Load handler[TPRPRegisiter] -> [*TPRP.TPRPRegisiter] 
+Load handler[SearchAllTransactionDataByCompanyId] -> [*AP.SearchAllTransactionDataByCompanyId] 
+Load handler[GetPNGImageById] -> [*DAP.GetPNGImageById] 
+Load handler[InitiateTransaction] -> [*EP.InitiateTransaction] 
+Load handler[GetTransactionInfoByTradeId] -> [*EP.GetTransactionInfoByTradeId] 
+Load handler[TransmissionPGEFile] -> [*contract.TransmissionPGEFile] 
+Dir :  %!(EXTRA string=/Users/qiuwenhao/GolandProjects/ChainMaker_Backend_demo/src)[GIN] 2024/03/27 - 13:41:00 | 200 |   49.562208ms |             ::1 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+Load handler[APRegisiterForDAPAndTPRP] -> [*AP.APRegisiterForDAPAndTPRP] 
+Load handler[SearchPGEById] -> [*contract.SearchPGEById] 
+Load handler[DAPExamineForCE] -> [*contract.DAPExamineForCE] 
+Load handler[GetCloseTransactionList] -> [*EP.GetCloseTransactionList] 
+Load handler[GetCompanyByCompanyId] -> [*EP.GetCompanyByCompanyId] 
+Load handler[GetCompanyTransactionByCompanyId] -> [*EP.GetCompanyTransactionByCompanyId] 
+Load handler[GetContractList] -> [*Browser.GetContractList] 
+Load handler[TPRPDistributeCredit] -> [*TPRP.TPRPToExamineRegisiter] 
+Load handler[VerifySign] -> [*EP.VerifySign] 
+Load handler[TPRPRegisiter] -> [*TPRP.TPRPRegisiter] 
+Load handler[APDistributeCoin] -> [*contract.APDistributeCoin] 
+Load handler[AToBTransaction] -> [*contract.AToBTransaction] 
+Load handler[SearchUserCarbonInfo] -> [*contract.SearchUserCarbonCoinAndCredit] 
+Load handler[DAPExamineForPGE] -> [*contract.DAPExamineForPGE] 
+Load handler[CompanyLogin] -> [*EP.CompanyLogin] 
+Load handler[CancelTransaction] -> [*EP.CancelTransaction] 
+Load handler[SearchCEById] -> [*contract.SearchCEById] 
+Load handler[GetCancelTransactionList] -> [*EP.GetCancelTransactionList] 
+Load handler[CalculationForCE] -> [*contract.CalculationForCE] 
+Load handler[MergeFormulas] -> [*EP.MergeFormulas] 
+Load handler[TransmissionPGEFile] -> [*contract.TransmissionPGEFile] 
+Load handler[GetOrgCount] -> [*Browser.GetOrgCount] 
+Load handler[APSearchCoin] -> [*contract.APSearchCoin] 
+Load handler[GetOpenTransactionList] -> [*EP.GetOpenTransactionList] 
+Load handler[APRegisiter] -> [*AP.APRegisiter] 
+Load handler[DAPRegisiter] -> [*DAP.DAPRegisiter] 
+Load handler[GetTxCount] -> [*Browser.GetTxCount] 
+Load handler[SearchAllTransactionDataByCompanyId] -> [*AP.SearchAllTransactionDataByCompanyId] 
+Load handler[InformationDecoding] -> [*EP.InformationDecoding] 
+Load handler[TxIdToSearchTx] -> [*Browser.TxIdToSearchTx] 
+Load handler[InitiateTransaction] -> [*EP.InitiateTransaction] 
+Load handler[save] -> [*Test.SaveTest] 
+Load handler[GetAllTransactionList] -> [*EP.GetTransactionList] 
+Load handler[SearchCompanyInfo] -> [*EP.SearchCompanyInfo] 
+Load handler[GetCompanyList] -> [*EP.GetCompanyList] 
+Load handler[GetNodeCount] -> [*Browser.GetNodeCount] 
+Load handler[ResumingTransaction] -> [*EP.ResumingTransaction] 
+Load handler[SearchAllTransactionData] -> [*AP.SearchAllTransactionData] 
+Load handler[GetFileById] -> [*DAP.GetFileById] 
+Load handler[GetTransactionDataByCompanyId] -> [*EP.GetTransactionDataByCompanyId] 
+Load handler[Calculate] -> [*EP.Calculate] 
+Load handler[GetBlockList] -> [*Browser.GetBlockList] 
+Load handler[GetHeight] -> [*Browser.GetHeight] 
+Load handler[GetPNGImageById] -> [*DAP.GetPNGImageById] 
+Load handler[GetAllTransactionData] -> [*DAP.GetAllTransactionData] 
+Load handler[GetTransactionInfoByTradeId] -> [*EP.GetTransactionInfoByTradeId] 
+Load handler[GetTransactionListFromBrowser] -> [*Browser.GetTransactionListFromBrowser] 
+Load handler[APReviewFailed] -> [*AP.APReviewFailed] 
+Load handler[CreateCompany] -> [*EP.CompanyCreate] 
+Load handler[CalculationForPGE] -> [*contract.CalculationForPGE] 
+Dir :  %!(EXTRA string=/root/qiuwenhao/ChainMaker_Backend_demo/src)[GIN] 2024/04/11 - 08:44:15 | 200 |     121.281µs |  220.189.230.36 | POST     "/chainmaker?cmb=VerifySign"
+[GIN] 2024/04/11 - 08:45:25 | 200 |   10.933898ms |  220.189.230.36 | POST     "/chainmaker?cmb=VerifySign"
+[GIN] 2024/04/11 - 08:49:24 | 200 |      98.083µs |  220.189.230.36 | POST     "/chainmaker?cmb=VerifySign"
+[GIN] 2024/04/11 - 09:30:19 | 200 |    8.066011ms |  220.189.230.36 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:30:19 | 200 |    7.348215ms |  220.189.230.36 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 09:30:50 | 204 |       6.352µs |  220.189.230.36 | OPTIONS  "/chainmaker?cmb=MergeFormulas"
+[GIN] 2024/04/11 - 09:30:50 | 200 |    2.342911ms |  220.189.230.36 | POST     "/chainmaker?cmb=MergeFormulas"
+[GIN] 2024/04/11 - 09:36:45 | 200 |  321.792932ms |  220.189.230.36 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:36:45 | 200 |    8.645282ms |  220.189.230.36 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 09:36:58 | 200 |     1.22046ms |  220.189.230.36 | POST     "/chainmaker?cmb=MergeFormulas"
+Load handler[GetHeight] -> [*Browser.GetHeight] 
+Load handler[SearchPGEById] -> [*contract.SearchPGEById] 
+Load handler[SearchCEById] -> [*contract.SearchCEById] 
+Load handler[GetTransactionListFromBrowser] -> [*Browser.GetTransactionListFromBrowser] 
+Load handler[APDistributeCoin] -> [*contract.APDistributeCoin] 
+Load handler[CompanyLogin] -> [*EP.CompanyLogin] 
+Load handler[InformationDecoding] -> [*EP.InformationDecoding] 
+Load handler[Calculate] -> [*EP.Calculate] 
+Load handler[GetContractList] -> [*Browser.GetContractList] 
+Load handler[TransmissionPGEFile] -> [*contract.TransmissionPGEFile] 
+Load handler[APSearchCoin] -> [*contract.APSearchCoin] 
+Load handler[SearchAllTransactionData] -> [*AP.SearchAllTransactionData] 
+Load handler[save] -> [*Test.SaveTest] 
+Load handler[GetAllTransactionData] -> [*DAP.GetAllTransactionData] 
+Load handler[GetCancelTransactionList] -> [*EP.GetCancelTransactionList] 
+Load handler[TxIdToSearchTx] -> [*Browser.TxIdToSearchTx] 
+Load handler[GetNodeCount] -> [*Browser.GetNodeCount] 
+Load handler[GetOrgCount] -> [*Browser.GetOrgCount] 
+Load handler[APRegisiterForDAPAndTPRP] -> [*AP.APRegisiterForDAPAndTPRP] 
+Load handler[APReviewFailed] -> [*AP.APReviewFailed] 
+Load handler[DAPExamineForPGE] -> [*contract.DAPExamineForPGE] 
+Load handler[VerifySign] -> [*EP.VerifySign] 
+Load handler[GetCompanyTransactionByCompanyId] -> [*EP.GetCompanyTransactionByCompanyId] 
+Load handler[MergeFormulas] -> [*EP.MergeFormulas] 
+Load handler[InitiateTransaction] -> [*EP.InitiateTransaction] 
+Load handler[CreateCompany] -> [*EP.CompanyCreate] 
+Load handler[GetTransactionInfoByTradeId] -> [*EP.GetTransactionInfoByTradeId] 
+Load handler[GetTransactionDataByCompanyId] -> [*EP.GetTransactionDataByCompanyId] 
+Load handler[APRegisiter] -> [*AP.APRegisiter] 
+Load handler[AToBTransaction] -> [*contract.AToBTransaction] 
+Load handler[DAPExamineForCE] -> [*contract.DAPExamineForCE] 
+Load handler[CalculationForPGE] -> [*contract.CalculationForPGE] 
+Load handler[TPRPRegisiter] -> [*TPRP.TPRPRegisiter] 
+Load handler[GetPNGImageById] -> [*DAP.GetPNGImageById] 
+Load handler[SearchCompanyInfo] -> [*EP.SearchCompanyInfo] 
+Load handler[GetBlockList] -> [*Browser.GetBlockList] 
+Load handler[GetFileById] -> [*DAP.GetFileById] 
+Load handler[SearchUserCarbonInfo] -> [*contract.SearchUserCarbonCoinAndCredit] 
+Load handler[ResumingTransaction] -> [*EP.ResumingTransaction] 
+Load handler[GetCompanyByCompanyId] -> [*EP.GetCompanyByCompanyId] 
+Load handler[GetCompanyList] -> [*EP.GetCompanyList] 
+Load handler[CalculationForCE] -> [*contract.CalculationForCE] 
+Load handler[SearchAllTransactionDataByCompanyId] -> [*AP.SearchAllTransactionDataByCompanyId] 
+Load handler[GetTxCount] -> [*Browser.GetTxCount] 
+Load handler[DAPRegisiter] -> [*DAP.DAPRegisiter] 
+Load handler[GetAllTransactionList] -> [*EP.GetTransactionList] 
+Load handler[GetOpenTransactionList] -> [*EP.GetOpenTransactionList] 
+Load handler[GetCloseTransactionList] -> [*EP.GetCloseTransactionList] 
+Load handler[CancelTransaction] -> [*EP.CancelTransaction] 
+Load handler[TPRPDistributeCredit] -> [*TPRP.TPRPToExamineRegisiter] 
+Dir :  %!(EXTRA string=/root/qiuwenhao/ChainMaker_Backend_demo/src)[GIN] 2024/04/11 - 09:39:28 | 204 |       7.607µs |  220.189.230.36 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:39:28 | 200 |    9.972622ms |  220.189.230.36 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:39:28 | 204 |       6.241µs |  220.189.230.36 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 09:39:28 | 200 |    6.597064ms |  220.189.230.36 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 09:39:56 | 204 |      26.971µs |  220.189.230.36 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:39:56 | 200 |    7.491451ms |  220.189.230.36 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:39:56 | 204 |         4.7µs |  220.189.230.36 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 09:39:56 | 200 |    7.400298ms |  220.189.230.36 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 09:40:23 | 204 |      23.854µs |  220.189.230.36 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:40:23 | 200 |    5.307842ms |  220.189.230.36 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 09:40:23 | 204 |       4.365µs |  220.189.230.36 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 09:40:23 | 200 |     5.21429ms |  220.189.230.36 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 10:11:07 | 404 |        3.04µs | 113.215.189.215 | GET      "/"
+[GIN] 2024/04/11 - 11:35:59 | 404 |       3.563µs |  39.103.158.106 | GET      "/"
+[GIN] 2024/04/11 - 15:44:19 | 204 |      24.745µs |   39.171.154.26 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 15:44:19 | 200 |    5.148756ms |   39.171.154.26 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/11 - 15:44:19 | 204 |       4.766µs |   39.171.154.26 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 15:44:19 | 200 |    5.124484ms |   39.171.154.26 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/11 - 15:44:20 | 200 |    3.029324ms |   39.171.154.26 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/11 - 15:46:52 | 204 |      22.525µs |   39.171.154.26 | OPTIONS  "/chainmaker?cmb=MergeFormulas"
+[GIN] 2024/04/11 - 15:46:52 | 200 |      73.981µs |   39.171.154.26 | POST     "/chainmaker?cmb=MergeFormulas"
+[GIN] 2024/04/11 - 15:46:57 | 204 |       7.218µs |   39.171.154.26 | OPTIONS  "/chainmaker?cmb=Calculate"
+[GIN] 2024/04/11 - 15:46:57 | 200 |   11.741293ms |   39.171.154.26 | POST     "/chainmaker?cmb=Calculate"
+[GIN] 2024/04/11 - 15:49:09 | 200 |      82.696µs |   39.171.154.26 | POST     "/chainmaker?cmb=MergeFormulas"
+[GIN] 2024/04/11 - 15:50:09 | 200 |      73.194µs |   39.171.154.26 | POST     "/chainmaker?cmb=MergeFormulas"
+[GIN] 2024/04/11 - 15:50:13 | 200 |   11.850349ms |   39.171.154.26 | POST     "/chainmaker?cmb=Calculate"
+[GIN] 2024/04/11 - 15:51:33 | 200 |      98.671µs |   39.171.154.26 | POST     "/chainmaker?cmb=MergeFormulas"
+[GIN] 2024/04/11 - 15:51:37 | 200 |   11.711879ms |   39.171.154.26 | POST     "/chainmaker?cmb=Calculate"
+
+ CompanyId : %!(EXTRA string=LightCompany)
+ CompanyTxDatas : %!(EXTRA []Model.CompanyTransactionData=[{102 LightCompany {"FSCO":1218.9,"SPDCO":297.59999999999997,"Total":1516.5,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"LightCompany","PGERepairREC":[{"Id":1,"RECV":20,"RECR":10},{"Id":2,"RECV":30,"RECR":15}],"PGERetireREC":[{"Id":1,"RECV":25,"RECR":15},{"Id":2,"RECV":40,"RECR":24}],"ELSW":100,"ELSR":86,"ELSC":27,"ELSD":35,"ELSPDL":12,"EFDW":2.4}} ["公司营业执照.png","行政许可和资质.png","化工碳排放证明材料.docx","组织结构和人员.docx"] 2024-04-07 20:33:47 +0800 CST 2024-04-07 20:33:47 +0800 CST 1 0 DAPAdmin1 PGE_102.pdf} {111 LightCompany {"Total":70453.25649999999,"Data":{"CompanyId":"LightCompany","COSummaryS":[{"Breed":"化石燃料CO2","WS":500,"CO":400},{"Breed":"工业生产过程CO2","WS":500,"CO":300},{"Breed":"工业生产过程N2O","WS":400,"CO":400},{"Breed":"CO2回收利用量","WS":300,"CO":240},{"Breed":"企业净购入的电力和热力消费引起的CO2排放","WS":600,"CO":400},{"Breed":"企业温室气体排放总量","WS":0,"CO":400}],"Ecors":[{"Breed":"无烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":1},{"Breed":"烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"褐煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.6,"OF":0.3,"OFDS":0}],"Eghg":{"GYSCCORC":{"GYSCCOR":[{"Breed":"物料1","AD":50,"CC":25,"CCDS":1}],"GYSCCOC":[{"Breed":"物料2","AD":50,"CC":30,"CCDS":0}]},"CACOS":[{"Breed":"碳酸盐1","AD":20,"EF":0,"EFDS":0}],"XSCOS":[{"Breed":"高压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"中压法","AD":30,"EF":15,"EFDS":0,"NK":0.5,"NKDS":0,"UK":0.7,"UKDS":0},{"Breed":"常压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"双加压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"综合法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"低压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}],"YRSCOS":[{"Breed":"硝酸氧化","AD":40,"EF":20,"EFDS":0,"NK":0.6,"NKDS":0,"UK":0.7,"UKDS":0},{"Breed":"其他","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}]},"RCO":540,"Drcos":[{"Breed":"电力","AD":50,"AD1":30,"AD2":20,"EF":0.25},{"Breed":"蒸汽","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"热水","AD":0,"AD1":0,"AD2":0,"EF":0}]}} ["公司营业执照.png","行政许可和资质.png"] 2024-04-11 08:34:40 +0800 CST 2024-04-11 08:34:40 +0800 CST 0 1  } {112 LightCompany {"Total":27,"Formula":"(a+b)*(c*(a+b))","Data":[{"ParameterName":"a","ParameterSum":1},{"ParameterName":"b","ParameterSum":2},{"ParameterName":"c","ParameterSum":3}]}  2024-04-11 15:46:57 +0800 CST 2024-04-11 15:46:57 +0800 CST 0 2  } {113 LightCompany {"Total":18,"Formula":"(a+b)*(b*c)","Data":[{"ParameterName":"a","ParameterSum":1},{"ParameterName":"b","ParameterSum":2},{"ParameterName":"c","ParameterSum":3}]}  2024-04-11 15:50:13 +0800 CST 2024-04-11 15:50:13 +0800 CST 0 2  } {114 LightCompany {"Total":13,"Formula":"(a+b)+(b*c)+(a+c)","Data":[{"ParameterName":"a","ParameterSum":1},{"ParameterName":"b","ParameterSum":2},{"ParameterName":"c","ParameterSum":3}]}  2024-04-11 15:51:37 +0800 CST 2024-04-11 15:51:37 +0800 CST 0 2  }])
+ CompanyTxData : %!(EXTRA Model.CompanyTransactionData={114 LightCompany {"Total":13,"Formula":"(a+b)+(b*c)+(a+c)","Data":[{"ParameterName":"a","ParameterSum":1},{"ParameterName":"b","ParameterSum":2},{"ParameterName":"c","ParameterSum":3}]}  2024-04-11 15:51:37 +0800 CST 2024-04-11 15:51:37 +0800 CST 0 2  })[GIN] 2024/04/11 - 15:51:56 | 200 |  1.580074437s |   39.171.154.26 | POST     "/chainmaker?cmb=TransmissionPGEFile"
+[GIN] 2024/04/12 - 02:41:53 | 404 |       5.619µs | 101.133.224.200 | GET      "/"
+[GIN] 2024/04/12 - 02:41:56 | 204 |      29.515µs | 101.133.224.200 | OPTIONS  "/"
+[GIN] 2024/04/12 - 02:43:14 | 404 |       5.481µs | 101.133.224.200 | GET      "/nice ports,/Trinity.txt.bak"
+[GIN] 2024/04/12 - 07:31:45 | 404 |        2.68µs |   39.103.165.99 | GET      "/"
+[GIN] 2024/04/12 - 10:08:41 | 404 |        2.76µs | 162.216.149.188 | GET      "/"
+[GIN] 2024/04/12 - 11:25:00 | 404 |        4.02µs |    45.81.34.172 | GET      "/"
+[GIN] 2024/04/12 - 11:25:20 | 404 |       3.218µs |    45.81.34.172 | GET      "/favicon.ico"
+[GIN] 2024/04/12 - 11:25:21 | 404 |       2.712µs |    45.81.34.172 | GET      "/robots.txt"
+[GIN] 2024/04/12 - 11:25:28 | 404 |       2.823µs |    45.81.34.172 | GET      "/sitemap.xml"
+[GIN] 2024/04/12 - 16:20:30 | 204 |      23.802µs |  223.104.159.70 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[mysql] 2024/04/12 16:20:30 packets.go:122: closing bad idle connection: EOF
+[mysql] 2024/04/12 16:20:30 connection.go:158: driver: bad connection
+[GIN] 2024/04/12 - 16:20:30 | 200 |   16.274344ms |  223.104.159.70 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 16:20:30 | 204 |       4.613µs |  223.104.159.70 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 16:20:30 | 200 |     5.77989ms |  223.104.159.70 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 16:20:45 | 204 |       7.161µs |  223.104.159.70 | OPTIONS  "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/12 - 16:20:45 | 200 |    5.710009ms |  223.104.159.70 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/12 - 16:20:49 | 200 |     3.01064ms |  223.104.159.70 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/12 - 16:22:07 | 200 |    5.642587ms |  223.104.159.70 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/12 - 16:39:46 | 200 |    5.441734ms |  223.104.159.70 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 16:39:46 | 200 |    5.438195ms |  223.104.159.70 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 16:39:54 | 200 |    5.622022ms |  223.104.159.70 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/12 - 16:40:22 | 200 |     3.08134ms |  223.104.159.70 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/12 - 20:37:38 | 204 |      21.541µs |  39.171.154.137 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 20:37:38 | 200 |    5.443784ms |  39.171.154.137 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 20:37:39 | 204 |       4.819µs |  39.171.154.137 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 20:37:39 | 200 |    5.326902ms |  39.171.154.137 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 20:40:36 | 204 |      22.876µs |  112.17.241.228 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 20:40:36 | 200 |    5.393094ms |  112.17.241.228 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 20:40:36 | 204 |       5.216µs |  112.17.241.228 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 20:40:36 | 200 |    5.410751ms |  112.17.241.228 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 20:45:11 | 204 |      26.162µs |  112.17.241.228 | OPTIONS  "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/12 - 20:45:11 | 200 |   13.627222ms |  112.17.241.228 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/12 - 20:45:44 | 200 |     5.48165ms |  112.17.241.228 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 20:45:44 | 200 |   13.687682ms |  112.17.241.228 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 20:45:47 | 200 |    5.534429ms |  112.17.241.228 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/12 - 20:46:10 | 200 |    5.434627ms |  112.17.241.228 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/12 - 20:46:10 | 200 |   11.343016ms |  112.17.241.228 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/12 - 20:46:12 | 200 |    5.584272ms |  112.17.241.228 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 08:31:58 | 404 |        3.52µs |  35.203.210.176 | GET      "/"
+[GIN] 2024/04/13 - 14:57:44 | 404 |       2.518µs | 101.251.238.122 | GET      "/"
+[GIN] 2024/04/13 - 14:57:46 | 404 |       3.009µs | 101.251.238.122 | GET      "/"
+[GIN] 2024/04/13 - 14:57:48 | 404 |       3.051µs | 101.251.238.122 | GET      "/"
+[GIN] 2024/04/13 - 14:57:50 | 404 |       3.214µs | 101.251.238.122 | GET      "/favicon.ico"
+[GIN] 2024/04/13 - 14:57:52 | 404 |       3.568µs | 101.251.238.122 | GET      "/favicon.ico"
+[GIN] 2024/04/13 - 20:18:53 | 204 |       24.98µs |  112.17.241.209 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[mysql] 2024/04/13 20:18:53 packets.go:122: closing bad idle connection: EOF
+[mysql] 2024/04/13 20:18:53 connection.go:158: driver: bad connection
+[GIN] 2024/04/13 - 20:18:53 | 200 |   18.161379ms |  112.17.241.209 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/13 - 20:18:53 | 200 |     6.38175ms |  112.17.241.209 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/13 - 20:18:53 | 204 |      24.535µs |  112.17.241.209 | OPTIONS  "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 20:18:53 | 200 |    3.485534ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/13 - 20:18:53 | 200 |     3.74805ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 20:37:47 | 200 |    6.211497ms |  112.17.241.209 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/13 - 20:37:47 | 200 |    4.572866ms |  112.17.241.209 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/13 - 20:37:47 | 200 |    6.009568ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 20:37:47 | 200 |   14.600436ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/13 - 20:38:06 | 200 |    6.406711ms |  112.17.241.209 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/13 - 20:38:06 | 200 |    3.379452ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/13 - 20:38:06 | 200 |    6.478024ms |  112.17.241.209 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/13 - 20:38:06 | 200 |   15.847102ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 20:38:26 | 200 |    6.057683ms |  112.17.241.209 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/13 - 20:38:26 | 200 |    4.371792ms |  112.17.241.209 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/13 - 20:38:26 | 200 |    3.512826ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 20:38:26 | 200 |    3.794235ms |  112.17.241.209 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/13 - 20:50:33 | 200 |    4.603546ms |  112.17.241.164 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/13 - 21:59:03 | 204 |      23.347µs |  223.104.159.80 | OPTIONS  "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 21:59:03 | 200 |    6.389742ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:01:37 | 204 |      23.017µs |  223.104.159.80 | OPTIONS  "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:01:37 | 200 |   28.614048ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:02:05 | 200 |    4.470372ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/13 - 22:02:17 | 200 |    3.740601ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:04:02 | 200 |    6.350072ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:04:02 | 200 |    6.211301ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:04:06 | 200 |    3.923596ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:14:40 | 200 |    6.284447ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:14:40 | 200 |    5.874435ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+Public Key: {Curve:0x2a164a0 X:+45774316400507685846574775423879106714437149718911245884135676460448092507307 Y:+21972388694695734754754828474088966136647636389079684657365153291704588490857}
+Public Key (PEM):
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZTNYT1zdU0E4Mf+quqvDcao981tH
+x+FbocP4fbxjzKswk+5o6qZqp9Z3Nis5Cje5NB1YCR3CJ4b/Uy3lRTbYaQ==
+-----END PUBLIC KEY-----
+Create PublicKeyPEM :  
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZTNYT1zdU0E4Mf+quqvDcao981tH
+x+FbocP4fbxjzKswk+5o6qZqp9Z3Nis5Cje5NB1YCR3CJ4b/Uy3lRTbYaQ==
+-----END PUBLIC KEY-----
+[GIN] 2024/04/13 - 22:15:10 | 200 |   32.921358ms |  39.171.154.241 | POST     "/chainmaker?cmb=APRegisiter"
+Public Key: {Curve:0x2a164a0 X:+99365339328852032880311478351954403335509429543410081650254109843429349647747 Y:+89467214951833198507410581201680942637110839650582961636204574855432599836744}
+Public Key (PEM):
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE267J/gmGZIrwO2KA4N/Vu9Pex7lo
+1PSv1gXJVvPD5YPFzKYv15YMXlJSOdovz7y27NwMYoU/lveJdW0kK4EYSA==
+-----END PUBLIC KEY-----
+Create PublicKeyPEM :  
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE267J/gmGZIrwO2KA4N/Vu9Pex7lo
+1PSv1gXJVvPD5YPFzKYv15YMXlJSOdovz7y27NwMYoU/lveJdW0kK4EYSA==
+-----END PUBLIC KEY-----
+[GIN] 2024/04/13 - 22:18:48 | 200 |   32.786201ms |  39.171.154.241 | POST     "/chainmaker?cmb=DAPRegisiter"
+[GIN] 2024/04/13 - 22:23:05 | 200 |    6.131337ms |  39.171.154.241 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:23:18 | 200 |    3.853719ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:23:22 | 200 |    6.293165ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:23:22 | 200 |    5.892918ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:23:24 | 200 |    3.759244ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:23:30 | 200 |    6.244461ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:23:30 | 200 |    5.871548ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:23:34 | 200 |    3.791097ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:23:44 | 200 |    6.180539ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:23:44 | 200 |    5.756472ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:23:46 | 200 |    3.782095ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:23:53 | 200 |     6.24066ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:23:53 | 200 |    5.737556ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:23:59 | 200 |    3.760391ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:24:01 | 200 |    6.258018ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:24:01 | 200 |     5.84322ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:03 | 200 |     3.80121ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:24:06 | 200 |    6.233939ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:24:06 | 200 |    5.880372ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:07 | 200 |    3.808877ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:24:09 | 200 |    6.228032ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:24:09 | 200 |    5.700736ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:10 | 200 |    4.229737ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:24:16 | 200 |    6.237431ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:24:16 | 200 |    5.765405ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:38 | 200 |    6.353478ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:24:38 | 200 |    5.709151ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:38 | 200 |   10.573973ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:38 | 200 |     5.72866ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:38 | 200 |    5.701294ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:24:38 | 200 |    5.912067ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:25:05 | 200 |    6.251349ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:25:05 | 200 |    6.344655ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:27:20 | 204 |      28.853µs |  223.104.159.80 | OPTIONS  "/chainmaker?cmb=SearchPGEById"
+
+  jsondata  : %!(EXTRA string={"FSCO":26385.6,"SPDCO":53.32800000000001,"Total":26438.928,"Data":{"DAPadmin":"","CompanyId":"GloriousCentury","PGERepairREC":[{"Id":1,"RECV":100,"RECR":30},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"PGERetireREC":[{"Id":1,"RECV":1000,"RECR":300},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 22:27:20 | 200 |    6.350073ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+CarbonCredit : %!(EXTRA string=50000)
+上链信息 : 
+ contract_result:<message:"Success" gas_used:6470 > tx_id:"17c5dda8b57e0144caaa5d24b6180e2076221e32047c4dd6a01633da0e2580b6" tx_timestamp:1713018949 tx_block_height:316   
+ company : %!(EXTRA Model.Company={62 testadmin admin 0 null test 0 1 1213 1231231 0})Public Key: {Curve:0x2a164a0 X:+102281475450079180474620187064341384366314727768731342822147493991345321438538 Y:+68208178766014525439833280292605655186022424414016499663302046736575896859665}
+Public Key (PEM):
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4iFDemh+m4h8fqqmIyCTNiyzEwxJ
+xPGzcE8FKmYsbUqWzHYKD5X+xaAYDFewcsC/6+bo45uoD1rHHp7Q57G0EQ==
+-----END PUBLIC KEY-----
+Create PublicKeyPEM :  
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4iFDemh+m4h8fqqmIyCTNiyzEwxJ
+xPGzcE8FKmYsbUqWzHYKD5X+xaAYDFewcsC/6+bo45uoD1rHHp7Q57G0EQ==
+-----END PUBLIC KEY-----
+
+ MKDir Success%!(EXTRA string=/root/qiuwenhao/CompanyTransactionDatas/testadmin)[GIN] 2024/04/13 - 22:35:51 | 200 |  1.085536828s |  39.171.154.241 | POST     "/chainmaker?cmb=APDistributeCoin"
+[GIN] 2024/04/13 - 22:36:21 | 200 |    6.312296ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:36:21 | 200 |    5.826071ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"FSCO":26385.6,"SPDCO":53.32800000000001,"Total":26438.928,"Data":{"DAPadmin":"","CompanyId":"GloriousCentury","PGERepairREC":[{"Id":1,"RECV":100,"RECR":30},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"PGERetireREC":[{"Id":1,"RECV":1000,"RECR":300},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 22:36:27 | 200 |    6.308183ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:36:41 | 204 |       6.388µs |  223.104.159.80 | OPTIONS  "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:36:41 | 200 |    3.864037ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:36:45 | 200 |    6.218145ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:36:45 | 200 |    5.688221ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"Total":115923.35669333333,"Data":{"CompanyId":"GloriousCentury","COSummaryS":[{"Breed":"化石燃料CO2","WS":500,"CO":1000},{"Breed":"工业生产过程CO2","WS":500,"CO":1000},{"Breed":"工业生产过程N2O","WS":500,"CO":1000},{"Breed":"CO2回收利用量","WS":500,"CO":1000},{"Breed":"企业净购入的电力和热力消费引起的CO2排放","WS":500,"CO":1000},{"Breed":"企业温室气体排放总量","WS":0,"CO":1000}],"Ecors":[{"Breed":"无烟煤","AD":100,"CC":50,"CCDS":1,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"褐煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"洗精煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0}],"Eghg":{"GYSCCORC":{"GYSCCOR":[{"Breed":"无烟煤","AD":50,"CC":25,"CCDS":0}],"GYSCCOC":[{"Breed":"乙烯","AD":50,"CC":25,"CCDS":0}]},"CACOS":[{"Breed":"石灰石","AD":50,"EF":0,"EFDS":0},{"Breed":"白云石","AD":20,"EF":0,"EFDS":0}],"XSCOS":[{"Breed":"高压法","AD":40,"EF":0.4,"EFDS":0,"NK":1,"NKDS":0,"UK":0.5,"UKDS":0},{"Breed":"中压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"常压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"双加压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"综合法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"低压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}],"YRSCOS":[{"Breed":"硝酸氧化","AD":30,"EF":0.4,"EFDS":0,"NK":0.5,"NKDS":0,"UK":0.6,"UKDS":0},{"Breed":"其他","AD":40,"EF":0.3,"EFDS":0,"NK":0.6,"NKDS":0,"UK":0.7,"UKDS":0}]},"RCO":1500,"Drcos":[{"Breed":"电力","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"蒸汽","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"热水","AD":100,"AD1":70,"AD2":30,"EF":0.3}]}})[GIN] 2024/04/13 - 22:36:49 | 200 |    6.270355ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:36:52 | 200 |    6.217626ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:36:52 | 200 |    15.67388ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"Total":115923.35669333333,"Data":{"CompanyId":"GloriousCentury","COSummaryS":[{"Breed":"化石燃料CO2","WS":500,"CO":1000},{"Breed":"工业生产过程CO2","WS":500,"CO":1000},{"Breed":"工业生产过程N2O","WS":500,"CO":1000},{"Breed":"CO2回收利用量","WS":500,"CO":1000},{"Breed":"企业净购入的电力和热力消费引起的CO2排放","WS":500,"CO":1000},{"Breed":"企业温室气体排放总量","WS":0,"CO":1000}],"Ecors":[{"Breed":"无烟煤","AD":100,"CC":50,"CCDS":1,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"褐煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"洗精煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0}],"Eghg":{"GYSCCORC":{"GYSCCOR":[{"Breed":"无烟煤","AD":50,"CC":25,"CCDS":0}],"GYSCCOC":[{"Breed":"乙烯","AD":50,"CC":25,"CCDS":0}]},"CACOS":[{"Breed":"石灰石","AD":50,"EF":0,"EFDS":0},{"Breed":"白云石","AD":20,"EF":0,"EFDS":0}],"XSCOS":[{"Breed":"高压法","AD":40,"EF":0.4,"EFDS":0,"NK":1,"NKDS":0,"UK":0.5,"UKDS":0},{"Breed":"中压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"常压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"双加压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"综合法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"低压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}],"YRSCOS":[{"Breed":"硝酸氧化","AD":30,"EF":0.4,"EFDS":0,"NK":0.5,"NKDS":0,"UK":0.6,"UKDS":0},{"Breed":"其他","AD":40,"EF":0.3,"EFDS":0,"NK":0.6,"NKDS":0,"UK":0.7,"UKDS":0}]},"RCO":1500,"Drcos":[{"Breed":"电力","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"蒸汽","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"热水","AD":100,"AD1":70,"AD2":30,"EF":0.3}]}})[GIN] 2024/04/13 - 22:36:58 | 200 |     6.34664ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:37:01 | 200 |    4.325871ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:37:09 | 200 |    6.516739ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:37:09 | 200 |    5.743614ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"FSCO":26385.6,"SPDCO":53.32800000000001,"Total":26438.928,"Data":{"DAPadmin":"","CompanyId":"GloriousCentury","PGERepairREC":[{"Id":1,"RECV":100,"RECR":30},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"PGERetireREC":[{"Id":1,"RECV":1000,"RECR":300},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 22:37:12 | 200 |    6.308806ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:37:15 | 200 |    3.784997ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:37:17 | 200 |    6.273896ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:37:17 | 200 |     6.53075ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"Total":115923.35669333333,"Data":{"CompanyId":"GloriousCentury","COSummaryS":[{"Breed":"化石燃料CO2","WS":500,"CO":1000},{"Breed":"工业生产过程CO2","WS":500,"CO":1000},{"Breed":"工业生产过程N2O","WS":500,"CO":1000},{"Breed":"CO2回收利用量","WS":500,"CO":1000},{"Breed":"企业净购入的电力和热力消费引起的CO2排放","WS":500,"CO":1000},{"Breed":"企业温室气体排放总量","WS":0,"CO":1000}],"Ecors":[{"Breed":"无烟煤","AD":100,"CC":50,"CCDS":1,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"褐煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"洗精煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0}],"Eghg":{"GYSCCORC":{"GYSCCOR":[{"Breed":"无烟煤","AD":50,"CC":25,"CCDS":0}],"GYSCCOC":[{"Breed":"乙烯","AD":50,"CC":25,"CCDS":0}]},"CACOS":[{"Breed":"石灰石","AD":50,"EF":0,"EFDS":0},{"Breed":"白云石","AD":20,"EF":0,"EFDS":0}],"XSCOS":[{"Breed":"高压法","AD":40,"EF":0.4,"EFDS":0,"NK":1,"NKDS":0,"UK":0.5,"UKDS":0},{"Breed":"中压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"常压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"双加压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"综合法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"低压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}],"YRSCOS":[{"Breed":"硝酸氧化","AD":30,"EF":0.4,"EFDS":0,"NK":0.5,"NKDS":0,"UK":0.6,"UKDS":0},{"Breed":"其他","AD":40,"EF":0.3,"EFDS":0,"NK":0.6,"NKDS":0,"UK":0.7,"UKDS":0}]},"RCO":1500,"Drcos":[{"Breed":"电力","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"蒸汽","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"热水","AD":100,"AD1":70,"AD2":30,"EF":0.3}]}})[GIN] 2024/04/13 - 22:37:20 | 200 |    6.266042ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:37:28 | 200 |    3.752148ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:37:32 | 200 |   16.975485ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:37:32 | 200 |     5.87267ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+companyID : %!(EXTRA string=testadmin)[GIN] 2024/04/13 - 22:37:35 | 200 |  517.878063ms |  39.171.154.241 | POST     "/chainmaker?cmb=APSearchCoin"
+
+  jsondata  : %!(EXTRA string={"FSCO":26385.6,"SPDCO":53.32800000000001,"Total":26438.928,"Data":{"DAPadmin":"","CompanyId":"GloriousCentury","PGERepairREC":[{"Id":1,"RECV":100,"RECR":30},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"PGERetireREC":[{"Id":1,"RECV":1000,"RECR":300},{"Id":2,"RECV":130,"RECR":33},{"Id":3,"RECV":100,"RECR":30}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 22:37:35 | 200 |    6.314903ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:37:39 | 200 |    3.841332ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:37:55 | 200 |    6.210369ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:37:55 | 200 |    5.695716ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 22:49:08 | 200 |    6.445646ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:49:12 | 200 |    4.101578ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 22:51:40 | 200 |    6.320017ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:51:40 | 200 |    5.798841ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 22:51:43 | 200 |    6.380448ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 22:51:48 | 200 |    6.180872ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:51:48 | 200 |    5.918294ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:51:50 | 200 |    6.411628ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 22:51:50 | 200 |    5.765327ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:51:50 | 200 |    5.861261ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:51:50 | 200 |    5.726848ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:51:50 | 200 |    5.788527ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:51:50 | 200 |    5.829754ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 22:51:50 | 200 |    5.772367ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 22:51:55 | 200 |    6.354539ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 23:01:25 | 200 |    3.930739ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:01:27 | 200 |     6.24065ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:01:27 | 200 |    6.104064ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 23:01:38 | 200 |    6.366541ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 23:01:41 | 200 |    3.896832ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:01:43 | 200 |    6.660525ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:01:43 | 200 |    5.853515ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:01:46 | 200 |     3.83434ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:01:48 | 200 |    6.394189ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:01:48 | 200 |   15.878807ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:01:51 | 200 |    9.194838ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:01:53 | 200 |    6.310872ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:01:53 | 200 |     5.84541ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:01:55 | 200 |    4.558322ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:01:58 | 200 |     6.68319ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:01:58 | 200 |    5.737028ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:02 | 200 |   10.640787ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:02:02 | 200 |     5.81048ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:03 | 200 |    6.656069ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:02:03 | 200 |   10.301123ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:03 | 200 |   10.187408ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:03 | 200 |    5.725519ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:03 | 200 |    5.840612ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:04 | 200 |    6.122648ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:16 | 200 |    6.314481ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:02:16 | 200 |    5.965669ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:17 | 200 |     3.74089ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:02:19 | 200 |    6.261453ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:02:19 | 200 |    5.690813ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:21 | 200 |    6.653734ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:02:21 | 200 |   11.083988ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:21 | 200 |    5.681654ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:21 | 200 |    5.781095ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:21 | 200 |    5.813152ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:21 | 200 |    5.820583ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:21 | 200 |    5.719929ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:02:48 | 200 |    6.251007ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:02:48 | 200 |    5.864788ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:03:16 | 200 |    6.196379ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:03:16 | 200 |     5.63533ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:03:16 | 200 |    5.694026ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:03:16 | 200 |    5.734708ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:03:16 | 200 |    5.810921ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:03:16 | 200 |    5.766763ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:03:16 | 200 |   10.225429ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/13 - 23:03:47 | 200 |    7.479698ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/13 - 23:03:47 | 200 |    5.866515ms |  223.104.159.80 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 23:03:50 | 200 |    6.325098ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/13 - 23:04:15 | 200 |    6.332796ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/13 - 23:07:39 | 200 |    3.850057ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:07:41 | 200 |    3.549534ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/13 - 23:22:02 | 200 |      3.6531ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/13 - 23:32:13 | 204 |      25.139µs |  223.104.159.80 | OPTIONS  "/chainmaker?cmb=GetContractList"
+GetContractListParams :  
+%!(EXTRA struct { ChainId string "json:\"chainId\""; ContractName string "json:\"contractName\""; PageNum int "json:\"pageNum\""; PageSize int "json:\"pageSize\"" }={Chain01  0 100})[GIN] 2024/04/13 - 23:32:13 | 200 |   17.252475ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetContractList"
+GetContractListParams :  
+%!(EXTRA struct { ChainId string "json:\"chainId\""; ContractName string "json:\"contractName\""; PageNum int "json:\"pageNum\""; PageSize int "json:\"pageSize\"" }={Chain01  0 100})[GIN] 2024/04/13 - 23:36:48 | 200 |   15.781057ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetContractList"
+[GIN] 2024/04/13 - 23:45:12 | 200 |    4.473063ms |  223.104.159.80 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/13 - 23:45:19 | 200 |    3.858894ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/13 - 23:45:29 | 200 |    3.572697ms |  223.104.159.80 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 00:50:50 | 404 |       2.814µs |   35.203.210.71 | GET      "/"
+[mysql] 2024/04/14 14:06:24 packets.go:122: closing bad idle connection: EOF
+[mysql] 2024/04/14 14:06:24 packets.go:122: closing bad idle connection: EOF
+[GIN] 2024/04/14 - 14:06:24 | 200 |   17.907807ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/14 - 14:06:25 | 204 |       7.566µs |  223.104.159.82 | OPTIONS  "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:06:25 | 200 |    3.784367ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:06:28 | 200 |     4.47147ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/14 - 14:06:29 | 200 |    3.858506ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:06:30 | 200 |    3.523916ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 14:06:32 | 200 |    3.557208ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetCompanyList"
+GetContractListParams :  
+%!(EXTRA struct { ChainId string "json:\"chainId\""; ContractName string "json:\"contractName\""; PageNum int "json:\"pageNum\""; PageSize int "json:\"pageSize\"" }={Chain01  0 100})[GIN] 2024/04/14 - 14:06:37 | 200 |   13.682126ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetContractList"
+GetContractListParams :  
+%!(EXTRA struct { ChainId string "json:\"chainId\""; ContractName string "json:\"contractName\""; PageNum int "json:\"pageNum\""; PageSize int "json:\"pageSize\"" }={Chain01  0 100})[GIN] 2024/04/14 - 14:06:39 | 200 |   13.420226ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetContractList"
+[GIN] 2024/04/14 - 14:08:21 | 200 |    4.513405ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/14 - 14:08:28 | 200 |    3.719894ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:08:48 | 204 |       10.52µs |  223.104.159.82 | OPTIONS  "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:08:48 | 200 |    6.171851ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:08:48 | 204 |       5.061µs |  223.104.159.82 | OPTIONS  "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:08:48 | 200 |     6.30119ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:08:52 | 200 |    3.667919ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:09:32 | 200 |    6.133746ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:09:32 | 200 |    5.769731ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:09:38 | 200 |    6.123961ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:09:38 | 200 |    7.667408ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:09:38 | 200 |    7.686636ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:09:38 | 200 |    6.074667ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:09:38 | 200 |    5.814225ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:09:38 | 200 |    5.696614ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:09:42 | 204 |       7.327µs |  223.104.159.82 | OPTIONS  "/chainmaker?cmb=SearchPGEById"
+
+  jsondata  : %!(EXTRA string={"Total":115923.35669333333,"Data":{"CompanyId":"GloriousCentury","COSummaryS":[{"Breed":"化石燃料CO2","WS":500,"CO":1000},{"Breed":"工业生产过程CO2","WS":500,"CO":1000},{"Breed":"工业生产过程N2O","WS":500,"CO":1000},{"Breed":"CO2回收利用量","WS":500,"CO":1000},{"Breed":"企业净购入的电力和热力消费引起的CO2排放","WS":500,"CO":1000},{"Breed":"企业温室气体排放总量","WS":0,"CO":1000}],"Ecors":[{"Breed":"无烟煤","AD":100,"CC":50,"CCDS":1,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"褐煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"洗精煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0}],"Eghg":{"GYSCCORC":{"GYSCCOR":[{"Breed":"无烟煤","AD":50,"CC":25,"CCDS":0}],"GYSCCOC":[{"Breed":"乙烯","AD":50,"CC":25,"CCDS":0}]},"CACOS":[{"Breed":"石灰石","AD":50,"EF":0,"EFDS":0},{"Breed":"白云石","AD":20,"EF":0,"EFDS":0}],"XSCOS":[{"Breed":"高压法","AD":40,"EF":0.4,"EFDS":0,"NK":1,"NKDS":0,"UK":0.5,"UKDS":0},{"Breed":"中压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"常压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"双加压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"综合法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"低压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}],"YRSCOS":[{"Breed":"硝酸氧化","AD":30,"EF":0.4,"EFDS":0,"NK":0.5,"NKDS":0,"UK":0.6,"UKDS":0},{"Breed":"其他","AD":40,"EF":0.3,"EFDS":0,"NK":0.6,"NKDS":0,"UK":0.7,"UKDS":0}]},"RCO":1500,"Drcos":[{"Breed":"电力","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"蒸汽","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"热水","AD":100,"AD1":70,"AD2":30,"EF":0.3}]}})[GIN] 2024/04/14 - 14:09:42 | 200 |    6.092802ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/14 - 14:09:44 | 200 |    3.881461ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:10:00 | 200 |    3.495171ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 14:10:02 | 200 |    3.457734ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetCompanyList"
+GetContractListParams :  
+%!(EXTRA struct { ChainId string "json:\"chainId\""; ContractName string "json:\"contractName\""; PageNum int "json:\"pageNum\""; PageSize int "json:\"pageSize\"" }={Chain01  0 100})[GIN] 2024/04/14 - 14:11:44 | 200 |   13.527156ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetContractList"
+GetContractListParams :  
+%!(EXTRA struct { ChainId string "json:\"chainId\""; ContractName string "json:\"contractName\""; PageNum int "json:\"pageNum\""; PageSize int "json:\"pageSize\"" }={Chain01  0 100})[GIN] 2024/04/14 - 14:13:01 | 200 |   13.330561ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetContractList"
+[GIN] 2024/04/14 - 14:13:22 | 204 |        22.6µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:13:22 | 200 |    6.077686ms |  223.104.159.92 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:13:22 | 204 |       5.539µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/14 - 14:13:22 | 200 |    5.997994ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/14 - 14:25:43 | 204 |      20.348µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:25:43 | 200 |    6.041215ms |   39.171.155.63 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:26:38 | 204 |      22.155µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=CalculationForPGE"
+
+开始计算碳核算数据
+六氟化硫修理设备计算公式 : ∑(RECV（千克） - RECR（千克）) * 23.9
+计算结果 : 5664.30 （吨二氧化碳）
+六氟化硫退役设备计算公式 : ∑(RECV（千克） - RECR（千克）) * 23.9
+计算结果 : 20721.30 （吨二氧化碳）
+六氟化硫设备总和 ： 26385.60 （吨二氧化碳）
+开始计算输配电二氧化碳排放量 （吨二氧化碳）
+输配电二氧化碳排放量计算公式 ： (ELSW + ELSR - ELSC - ELSD) * EFDW
+ 输配电二氧化碳排放量 :  53.33 （吨二氧化碳）
+总计二氧化碳排放：26438.93 （吨二氧化碳）[GIN] 2024/04/14 - 14:26:41 | 200 |  3.015502166s |  223.104.159.92 | POST     "/chainmaker?cmb=CalculationForPGE"
+[GIN] 2024/04/14 - 14:28:12 | 204 |      23.392µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:28:13 | 200 |    6.396403ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:30:14 | 204 |      42.406µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:30:14 | 200 |    4.044889ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:31:49 | 200 |    3.781113ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 14:32:37 | 204 |      24.944µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=SearchPGEById"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/14 - 14:32:37 | 200 |    6.121011ms |   39.171.155.63 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/14 - 14:33:52 | 204 |      29.986µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:33:52 | 200 |    6.145736ms |  223.104.159.92 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:33:52 | 204 |       5.238µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/14 - 14:33:52 | 200 |    6.177176ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/14 - 14:34:34 | 204 |      19.007µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=SearchCEById"
+
+  jsondata  : %!(EXTRA string={"Total":65030.008400000006,"Data":{"CompanyId":"GloriousCentury","COSummaryS":[{"Breed":"化石燃料CO2","WS":2450,"CO":3200},{"Breed":"工业生产过程CO2","WS":1000,"CO":1200},{"Breed":"工业生产过程N2O","WS":2356,"CO":3400},{"Breed":"CO2回收利用量","WS":1200,"CO":1200},{"Breed":"企业净购入的电力和热力消费引起的CO2排放","WS":3456,"CO":1200},{"Breed":"企业温室气体排放总量","WS":0,"CO":12000}],"Ecors":[{"Breed":"无烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":1,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"烟煤","AD":120,"CC":60,"CCDS":1,"NCV":220,"NCVDS":1,"EF":0.6,"OF":0.7,"OFDS":0}],"Eghg":{"GYSCCORC":{"GYSCCOR":[{"Breed":"物料1","AD":50,"CC":25,"CCDS":1},{"Breed":"物料2","AD":30,"CC":15,"CCDS":2}],"GYSCCOC":[{"Breed":"产品1","AD":20,"CC":10,"CCDS":1},{"Breed":"产品2","AD":10,"CC":5,"CCDS":2}]},"CACOS":[{"Breed":"碳酸盐1","AD":50,"EF":0,"EFDS":0},{"Breed":"碳酸盐2","AD":30,"EF":0,"EFDS":0}],"XSCOS":[{"Breed":"高压法","AD":200,"EF":200,"EFDS":1,"NK":20,"NKDS":0,"UK":10,"UKDS":0},{"Breed":"中压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"常压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"双加压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"综合法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"低压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}],"YRSCOS":[{"Breed":"硝酸氧化","AD":30,"EF":0.4,"EFDS":0,"NK":0.5,"NKDS":0,"UK":0.6,"UKDS":0},{"Breed":"其他","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}]},"RCO":2400,"Drcos":[{"Breed":"电力","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"蒸汽","AD":80,"AD1":60,"AD2":20,"EF":0.3},{"Breed":"热水","AD":120,"AD1":90,"AD2":30,"EF":0.25}]}})[GIN] 2024/04/14 - 14:34:34 | 200 |    6.426611ms |   39.171.155.63 | POST     "/chainmaker?cmb=SearchCEById"
+[GIN] 2024/04/14 - 14:38:15 | 204 |      22.793µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=CalculationForPGE"
+
+开始计算碳核算数据
+六氟化硫修理设备计算公式 : ∑(RECV（千克） - RECR（千克）) * 23.9
+计算结果 : 5664.30 （吨二氧化碳）
+六氟化硫退役设备计算公式 : ∑(RECV（千克） - RECR（千克）) * 23.9
+计算结果 : 20721.30 （吨二氧化碳）
+六氟化硫设备总和 ： 26385.60 （吨二氧化碳）
+开始计算输配电二氧化碳排放量 （吨二氧化碳）
+输配电二氧化碳排放量计算公式 ： (ELSW + ELSR - ELSC - ELSD) * EFDW
+ 输配电二氧化碳排放量 :  53.33 （吨二氧化碳）
+总计二氧化碳排放：26438.93 （吨二氧化碳）[GIN] 2024/04/14 - 14:38:19 | 200 |  3.013718574s |  223.104.159.92 | POST     "/chainmaker?cmb=CalculationForPGE"
+[GIN] 2024/04/14 - 14:39:52 | 204 |      18.078µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=GetPNGImageById"
+[GIN] 2024/04/14 - 14:39:52 | 200 |  168.513867ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetPNGImageById"
+[GIN] 2024/04/14 - 14:41:50 | 204 |      23.786µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:41:50 | 200 |    6.235491ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:43:17 | 200 |    6.294626ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:45:38 | 204 |      21.898µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=SearchPGEById"
+
+  jsondata  : %!(EXTRA string={"FSCO":1218.9,"SPDCO":297.59999999999997,"Total":1516.5,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"LightCompany","PGERepairREC":[{"Id":1,"RECV":20,"RECR":10},{"Id":2,"RECV":30,"RECR":15}],"PGERetireREC":[{"Id":1,"RECV":25,"RECR":15},{"Id":2,"RECV":40,"RECR":24}],"ELSW":100,"ELSR":86,"ELSC":27,"ELSD":35,"ELSPDL":12,"EFDW":2.4}})[GIN] 2024/04/14 - 14:45:38 | 200 |   11.304112ms |  223.104.159.92 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/14 - 14:46:42 | 200 |    4.584312ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/14 - 14:47:09 | 204 |      38.728µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetPNGImageById"
+[GIN] 2024/04/14 - 14:47:10 | 200 |  1.065288196s |  223.104.159.92 | POST     "/chainmaker?cmb=GetPNGImageById"
+[GIN] 2024/04/14 - 14:47:56 | 200 |    6.374922ms |  223.104.159.82 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 14:48:21 | 200 |    5.806655ms |  223.104.159.82 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 14:49:21 | 200 |    3.422932ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/14 - 14:49:54 | 204 |      27.776µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:49:54 | 200 |    6.152914ms |  223.104.159.92 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 14:49:54 | 204 |       4.432µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/14 - 14:49:54 | 200 |    6.166198ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/14 - 14:49:56 | 200 |     3.40868ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/14 - 14:50:07 | 200 |    3.487097ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 14:50:42 | 200 |    3.569481ms |  223.104.159.82 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 15:01:45 | 200 |   15.317246ms |  223.104.159.92 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 15:01:45 | 200 |    6.101384ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetCompanyByCompanyId"
+[GIN] 2024/04/14 - 15:02:18 | 200 |    3.355945ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/14 - 15:05:45 | 204 |      22.956µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetTransactionInfoByTradeId"
+[GIN] 2024/04/14 - 15:05:45 | 200 |    6.136745ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetTransactionInfoByTradeId"
+[GIN] 2024/04/14 - 15:05:48 | 200 |     6.03945ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetTransactionInfoByTradeId"
+[GIN] 2024/04/14 - 15:08:01 | 200 |    3.504556ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/14 - 15:08:12 | 204 |      24.516µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=GetCompanyTransactionByCompanyId"
+[GIN] 2024/04/14 - 15:08:12 | 200 |    6.069836ms |  223.104.159.92 | POST     "/chainmaker?cmb=GetCompanyTransactionByCompanyId"
+[GIN] 2024/04/14 - 15:10:52 | 204 |      22.682µs |  223.104.159.92 | OPTIONS  "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 15:10:52 | 200 |    6.235556ms |  223.104.159.92 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 15:28:04 | 200 |    3.701259ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 15:35:09 | 200 |    6.053724ms |   39.171.155.63 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 15:35:10 | 200 |    3.751991ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetAllTransactionData"
+
+  jsondata  : %!(EXTRA string={"FSCO":9894.599999999999,"SPDCO":53.32800000000001,"Total":9947.927999999998,"Data":{"DAPadmin":"DAPAdmin1","CompanyId":"InnovisionFuture","PGERepairREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":130,"RECR":22}],"PGERetireREC":[{"Id":1,"RECV":130,"RECR":33},{"Id":2,"RECV":123,"RECR":11}],"ELSW":15.67,"ELSR":89.34,"ELSC":56.01,"ELSD":26.78,"ELSPDL":37.89,"EFDW":2.4}})[GIN] 2024/04/14 - 15:41:23 | 200 |    6.096494ms |   39.171.155.63 | POST     "/chainmaker?cmb=SearchPGEById"
+[GIN] 2024/04/14 - 15:56:21 | 404 |       2.668µs | 113.215.188.113 | GET      "/"
+[GIN] 2024/04/14 - 16:13:18 | 200 |    3.792959ms |   39.171.155.15 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 16:18:33 | 204 |       23.03µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 16:18:33 | 200 |    6.086303ms |   39.171.155.63 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 16:18:36 | 204 |       5.622µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 16:18:36 | 200 |    3.482544ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 16:18:41 | 200 |    3.564239ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 16:18:46 | 204 |       5.304µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=GetCompanyTransactionByCompanyId"
+[GIN] 2024/04/14 - 16:18:46 | 200 |    6.116993ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetCompanyTransactionByCompanyId"
+[GIN] 2024/04/14 - 16:18:48 | 200 |    3.513003ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 16:18:50 | 204 |       5.621µs |   39.171.155.63 | OPTIONS  "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 16:18:50 | 200 |    3.624614ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 16:18:55 | 200 |    6.210115ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetCompanyTransactionByCompanyId"
+[GIN] 2024/04/14 - 16:18:58 | 200 |    3.714223ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/14 - 16:18:58 | 200 |    3.511553ms |   39.171.155.63 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 16:24:14 | 200 |    6.100589ms |   39.171.155.15 | POST     "/chainmaker?cmb=GetCompanyTransactionByCompanyId"
+[GIN] 2024/04/14 - 16:25:24 | 204 |       5.641µs |   39.171.155.15 | OPTIONS  "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 16:25:24 | 200 |     6.08324ms |   39.171.155.15 | POST     "/chainmaker?cmb=TxIdToSearchTx"
+[GIN] 2024/04/14 - 16:44:29 | 404 |       2.802µs | 113.215.189.163 | GET      "/"
+[GIN] 2024/04/14 - 20:35:54 | 200 |    4.431454ms |   172.233.90.12 | POST     "/chainmaker?cmb=SearchAllTransactionData"
+[GIN] 2024/04/14 - 20:39:57 | 200 |    6.251509ms |  172.233.90.200 | POST     "/chainmaker?cmb=SearchAllTransactionDataByCompanyId"
+[GIN] 2024/04/14 - 20:45:56 | 200 |    3.723463ms |  172.233.79.106 | POST     "/chainmaker?cmb=GetAllTransactionData"
+
+  jsondata  : %!(EXTRA string={"FSCO":2437.8,"SPDCO":-31.2,"Total":2406.6000000000004,"Data":{"DAPadmin":"","CompanyId":"DynamicSpaceMedia ","PGERepairREC":[{"Id":1,"RECV":32,"RECR":12}],"PGERetireREC":[{"Id":1,"RECV":114,"RECR":32}],"ELSW":56,"ELSR":87,"ELSC":32,"ELSD":124,"ELSPDL":123,"EFDW":2.4}})[GIN] 2024/04/14 - 20:54:23 | 200 |    6.083823ms |  172.233.79.106 | POST     "/chainmaker?cmb=SearchPGEById"
+
+  jsondata  : %!(EXTRA string={"Total":115923.35669333333,"Data":{"CompanyId":"GloriousCentury","COSummaryS":[{"Breed":"化石燃料CO2","WS":500,"CO":1000},{"Breed":"工业生产过程CO2","WS":500,"CO":1000},{"Breed":"工业生产过程N2O","WS":500,"CO":1000},{"Breed":"CO2回收利用量","WS":500,"CO":1000},{"Breed":"企业净购入的电力和热力消费引起的CO2排放","WS":500,"CO":1000},{"Breed":"企业温室气体排放总量","WS":0,"CO":1000}],"Ecors":[{"Breed":"无烟煤","AD":100,"CC":50,"CCDS":1,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"烟煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"褐煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0},{"Breed":"洗精煤","AD":100,"CC":50,"CCDS":0,"NCV":200,"NCVDS":0,"EF":0.5,"OF":0.8,"OFDS":0}],"Eghg":{"GYSCCORC":{"GYSCCOR":[{"Breed":"无烟煤","AD":50,"CC":25,"CCDS":0}],"GYSCCOC":[{"Breed":"乙烯","AD":50,"CC":25,"CCDS":0}]},"CACOS":[{"Breed":"石灰石","AD":50,"EF":0,"EFDS":0},{"Breed":"白云石","AD":20,"EF":0,"EFDS":0}],"XSCOS":[{"Breed":"高压法","AD":40,"EF":0.4,"EFDS":0,"NK":1,"NKDS":0,"UK":0.5,"UKDS":0},{"Breed":"中压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"常压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"双加压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"综合法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0},{"Breed":"低压法","AD":0,"EF":0,"EFDS":0,"NK":0,"NKDS":0,"UK":0,"UKDS":0}],"YRSCOS":[{"Breed":"硝酸氧化","AD":30,"EF":0.4,"EFDS":0,"NK":0.5,"NKDS":0,"UK":0.6,"UKDS":0},{"Breed":"其他","AD":40,"EF":0.3,"EFDS":0,"NK":0.6,"NKDS":0,"UK":0.7,"UKDS":0}]},"RCO":1500,"Drcos":[{"Breed":"电力","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"蒸汽","AD":100,"AD1":70,"AD2":30,"EF":0.3},{"Breed":"热水","AD":100,"AD1":70,"AD2":30,"EF":0.3}]}})[GIN] 2024/04/14 - 20:55:42 | 200 |    6.293515ms |  172.233.79.106 | POST     "/chainmaker?cmb=SearchCEById"
+[GIN] 2024/04/14 - 21:03:11 | 500 |     113.216µs |   172.233.90.12 | POST     "/chainmaker?cmb=DAPExamineForCE"
+
+ 公司名称 ： GloriousCentury
+ 查询当日汇率
+ 当日汇率为 ： 0.0123
+ 开始审核
+ 用户扣除碳额度为 :115923.36 , 获取碳币为 : 1425.86 
+ 获取数据审核员公钥私钥
+ 管理员公钥: -----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGJXLKq9DCX+KpF1FsOr7O8CxaDBA
+IZaH0PV7JlDY5egbdiGcxiciKQ0UULe3zKe6LjUfpGKV4IPgbWn6Tvs5nw==
+-----END PUBLIC KEY-----
+
+ 创建哈希
+ hash ： ded3e3d684df495664de49ccec645d186c5b5a9cbcfd0ee3349ac5e69f329f8d
+ 数据审核员私钥签名碳核算Token
+ Token : 0E @R�M�qf����F`��(Լ�~�1��?W�! �S]��o�T�������Lp���j�?È�将碳核算报告数据上链
+上链信息 : 
+ contract_result:<message:"Success" gas_used:32750 > tx_id:"17c6273b7f33d08acaca8d6fadd2a76230c3968effef48018806609e1aa28fc7" tx_timestamp:1713099844 tx_block_height:319  
+ 生成碳报告PDFDir :  %!(EXTRA string=/root/qiuwenhao/ChainMaker_Backend_demo/src)
+ 生成成功 PDF文件名为 ： PGE_92.pdf [GIN] 2024/04/14 - 21:04:05 | 200 |  3.946313624s |  172.233.90.200 | POST     "/chainmaker?cmb=DAPExamineForCE"
+companyID : %!(EXTRA string=admin2)companies : %!(EXTRA []Model.Company=[])companies len : %!(EXTRA int=0)[GIN] 2024/04/14 - 21:11:51 | 200 |   24.752739ms |   218.28.224.34 | POST     "/chainmaker?cmb=CreateCompany"
+[GIN] 2024/04/14 - 21:14:34 | 200 |    6.164955ms |   218.28.224.34 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/14 - 21:15:55 | 200 |     6.00281ms |   218.28.224.34 | POST     "/chainmaker?cmb=SearchUserCarbonInfo"
+[GIN] 2024/04/14 - 21:19:40 | 200 |    3.327361ms |   218.28.224.34 | POST     "/chainmaker?cmb=GetAllTransactionList"
+[GIN] 2024/04/14 - 21:24:07 | 200 |    13.72348ms |   218.28.224.34 | POST     "/chainmaker?cmb=InitiateTransaction"
+[GIN] 2024/04/14 - 21:28:32 | 200 |    3.577134ms |   218.28.224.34 | POST     "/chainmaker?cmb=GetCompanyList"
+[GIN] 2024/04/14 - 21:30:56 | 400 |    6.033474ms |   218.28.224.34 | POST     "/chainmaker?cmb=GetTransactionInfoByTradeId"
+[GIN] 2024/04/14 - 21:31:12 | 200 |    6.239657ms |   218.28.224.34 | POST     "/chainmaker?cmb=GetTransactionInfoByTradeId"
+
+开始计算碳核算数据
+六氟化硫修理设备计算公式 : ∑(RECV（千克） - RECR（千克）) * 23.9
+计算结果 : 5664.30 （吨二氧化碳）
+六氟化硫退役设备计算公式 : ∑(RECV（千克） - RECR（千克）) * 23.9
+计算结果 : 20721.30 （吨二氧化碳）
+六氟化硫设备总和 ： 26385.60 （吨二氧化碳）
+开始计算输配电二氧化碳排放量 （吨二氧化碳）
+输配电二氧化碳排放量计算公式 ： (ELSW + ELSR - ELSC - ELSD) * EFDW
+ 输配电二氧化碳排放量 :  53.33 （吨二氧化碳）
+总计二氧化碳排放：26438.93 （吨二氧化碳）[GIN] 2024/04/14 - 21:33:49 | 200 |  3.014534853s |   218.28.224.34 | POST     "/chainmaker?cmb=CalculationForPGE"
+
+ 计算化石燃料燃烧生成的二氧化碳含量 （吨二氧化碳）
+ 计算公式：∑（ADi * （NCVi  * EFi） * OFi * 44 /12） ）
+ 化石燃料燃烧生成的二氧化碳含量 ： 69989.33 （吨二氧化碳）
+ 计算工业生产燃烧生成的二氧化碳含量 （吨二氧化碳）
+ 计算公式：（∑ADr * CCr  -  ∑ADp*CCp - ∑ADw*CCw ） * 44 /12
+ 计算结果 ： 5316.67 （吨二氧化碳）
+ 计算碳酸盐燃烧生成的二氧化碳含量 （吨二氧化碳）
+ 计算公式：∑ADi*EFi*PURi
+ 计算结果 ： 21.00 （吨二氧化碳）
+ 计算硝酸类燃烧生成的二氧化碳含量 （吨二氧化碳）
+ 计算公式：∑ADj*EFj*（1 - nk*jk）/1000
+ 计算结果 ： 0.01 （吨二氧化碳）
+ 计算乙二酸类燃烧生成的二氧化碳含量 （吨二氧化碳）
+ 计算公式：∑ADj*EFj*（1 - nk*jk）/1000
+ 计算结果 ： 0.02 （吨二氧化碳）
+ 计算电力热力燃烧生成的二氧化碳含量 （吨二氧化碳）
+ 计算公式：（AD电力*EF电力） + （AD热力*EF热力）
+ 计算结果 ： 84.00 （吨二氧化碳）
+总计二氧化碳排放：75261.03 （吨二氧化碳）[GIN] 2024/04/14 - 21:35:38 | 200 |   6.01526546s |   218.28.224.34 | POST     "/chainmaker?cmb=CalculationForCE"
+[GIN] 2024/04/14 - 21:40:31 | 200 |    6.112366ms |   218.28.224.34 | POST     "/chainmaker?cmb=GetCompanyTransactionByCompanyId"
+[GIN] 2024/04/15 - 01:52:21 | 204 |      22.675µs |   218.28.224.34 | OPTIONS  "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/15 - 01:52:21 | 200 |    7.013084ms |   218.28.224.34 | POST     "/chainmaker?cmb=CompanyLogin"
+[GIN] 2024/04/15 - 01:52:25 | 204 |       6.133µs |   218.28.224.34 | OPTIONS  "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/15 - 01:52:25 | 200 |    3.733374ms |   218.28.224.34 | POST     "/chainmaker?cmb=GetAllTransactionData"
+[GIN] 2024/04/15 - 01:52:32 | 204 |       5.408µs |   218.28.224.34 | OPTIONS  "/chainmaker?cmb=GetPNGImageById"
+[GIN] 2024/04/15 - 01:52:32 | 404 |     588.454µs |   218.28.224.34 | POST     "/chainmaker?cmb=GetPNGImageById"
+[GIN] 2024/04/15 - 01:52:36 | 200 |  140.782289ms |   218.28.224.34 | POST     "/chainmaker?cmb=GetPNGImageById"
+[GIN] 2024/04/15 - 04:41:06 | 404 |       4.036µs |  42.240.131.249 | GET      "/"
+[GIN] 2024/04/15 - 04:41:26 | 404 |       4.355µs |  162.216.150.17 | GET      "/"
+[GIN] 2024/04/15 - 13:09:06 | 404 |       3.022µs |   167.99.96.133 | GET      "/.git/config"
+[GIN] 2024/04/15 - 13:09:38 | 404 |       3.116µs |   148.153.56.86 | GET      "/K3dz"
+[GIN] 2024/04/15 - 13:09:39 | 404 |       3.381µs |   148.153.56.86 | GET      "/VuQA"
+[GIN] 2024/04/15 - 13:09:39 | 404 |       3.591µs |   148.153.56.86 | GET      "/aab8"
+[GIN] 2024/04/15 - 13:09:39 | 404 |       3.321µs |   148.153.56.86 | GET      "/jquery-3.3.1.slim.min.js"
+[GIN] 2024/04/15 - 13:09:39 | 404 |       2.855µs |   148.153.56.86 | GET      "/aab9"
+[GIN] 2024/04/15 - 13:09:40 | 404 |       2.915µs |   148.153.56.86 | GET      "/jquery-3.3.2.slim.min.js"
+[GIN] 2024/04/15 - 13:25:58 | 200 |    1.732611ms |  220.189.230.36 | POST     "/chainmaker?cmb=VerifySign"
+[GIN] 2024/04/15 - 21:02:50 | 404 |       4.415µs |    103.20.61.17 | GET      "/"
+[GIN] 2024/04/15 - 21:03:09 | 404 |       2.807µs |    103.20.61.17 | GET      "/favicon.ico"
+[GIN] 2024/04/16 - 00:01:07 | 404 |       2.938µs |    42.240.145.3 | GET      "/"
+[GIN] 2024/04/16 - 00:01:07 | 404 |       2.694µs |    42.240.145.3 | GET      "/"
+[GIN] 2024/04/16 - 03:46:42 | 404 |       3.451µs |   35.203.210.64 | GET      "/"
+[GIN] 2024/04/16 - 06:05:53 | 404 |       3.952µs |  39.103.165.234 | GET      "/"
+[GIN] 2024/04/16 - 06:05:58 | 204 |      25.135µs |  39.103.165.234 | OPTIONS  "/"
+[GIN] 2024/04/16 - 06:07:12 | 404 |       3.746µs |  39.103.165.234 | GET      "/nice ports,/Trinity.txt.bak"

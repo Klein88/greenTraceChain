@@ -1,0 +1,75 @@
+chain_client:
+  # 链ID
+  chain_id: "Chain01"
+  # 组织ID
+  org_id: "CarbonOrg1"
+  # 客户端用户私钥路径
+  user_key_file_path: "../config/crypto-config/CarbonOrg1/user/CarbonUser1/CarbonUser1.tls.key"
+  # 客户端用户私钥密码(无密码则不需要设置)
+#  user_key_pwd: "123"
+  # 客户端用户证书路径
+  user_crt_file_path: "../config/crypto-config/CarbonOrg1/user/CarbonUser1/CarbonUser1.tls.crt"
+  # 客户端用户交易签名私钥路径(若未设置，将使用user_key_file_path)
+  user_sign_key_file_path: "../config/crypto-config/CarbonOrg1/user/CarbonUser1/CarbonUser1.sign.key"
+  # 客户端用户交易签名私钥密码(无密码则不需要设置)
+#  user_sign_key_pwd: "123"
+  # 客户端用户交易签名证书路径(若未设置，将使用user_crt_file_path)
+  user_sign_crt_file_path: "../config/crypto-config/CarbonOrg1/user/CarbonUser1/CarbonUser1.sign.crt"
+  # 同步交易结果模式下，轮询获取交易结果时的最大轮询次数，删除此项或设为<=0则使用默认值 10
+  retry_limit: 20
+  # 同步交易结果模式下，每次轮询交易结果时的等待时间，单位：ms 删除此项或设为<=0则使用默认值 500
+  retry_interval: 500
+  # 当前签名证书的别名。当设置此配置项时，chain client 对象将自动检查链上是否已添加此别名，如果没有则自动上链此证书别名，
+  # 并且后续所有交易都会使用别名，别名可降低交易体大小。若为空则不启用。
+#  alias: my_cert_alias
+  # txid配置项：默认支持TimestampKey，如果开启enableNormalKey则使用NormalKey
+  enable_normal_key: false
+
+  enable_tx_result_dispatcher: true
+
+  nodes:
+    - # 节点地址，格式为：IP:端口:连接数
+      node_addr: "47.97.176.174:12301"
+      # 节点连接数
+      conn_cnt: 10
+      # RPC连接是否启用双向TLS认证
+      enable_tls: true
+      # 信任证书池路径
+      trust_root_paths:
+        - "../config/crypto-config/CarbonOrg1/ca"
+      # TLS hostname
+      tls_host_name: "chainmaker.org"
+  archive:
+    # 数据归档链外存储相关配置
+    # 如果使用了新版本的归档中心,这个地方配置为archivecenter
+    type: "mysql"  # archivecenter 归档中心, mysql mysql数据库    
+    dest: "root:123456:localhost:3306"
+    secret_key: xxx
+  rpc_client:
+    max_receive_message_size: 100 # grpc客户端接收消息时，允许单条message大小的最大值(MB)
+    max_send_message_size: 100 # grpc客户端发送消息时，允许单条message大小的最大值(MB)
+    send_tx_timeout: 60 # grpc 客户端发送交易超时时间
+    get_tx_timeout: 60 # rpc 客户端查询交易超时时间
+  pkcs11:
+    enabled: false # pkcs11 is not used by default
+    library: /usr/local/lib64/pkcs11/libupkcs11.so # path to the .so file of pkcs11 interface
+    label: HSM # label for the slot to be used
+    password: 11111111 # password to logon the HSM(Hardware security module)
+    session_cache_size: 10 # size of HSM session cache, default to 10
+    hash: "SHA256" # hash algorithm used to compute SKI  
+  # # 如果启用了归档中心,可以打开下面的归档中心配置  
+  archive_center_query_first: true # 如果为true且归档中心配置打开,那么查询数据优先从归档中心查询 
+  # archive_center_config:
+  #   chain_genesis_hash: c670b598127f5795767d1acbae435e714797596f7e0a55dd05205da948de1a0a
+  #   archive_center_http_url: http://127.0.0.1:13119
+  #   request_second_limit: 10
+  #   rpc_address: 127.0.0.1:13120
+  #   tls_enable: false
+  #   tls:
+  #     server_name: archiveserver1.tls.wx-org.chainmaker.org
+  #     priv_key_file: ./config/archivecenter/archiveclient1.tls.key
+  #     cert_file: ./config/archivecenter/archiveclient1.tls.crt
+  #     trust_ca_list:
+  #       - ./config/archivecenter/ca.crt    
+  #   max_send_msg_size: 200
+  #   max_recv_msg_size: 200 

@@ -1,0 +1,1 @@
+.custom-link{text-decoration:none;position:relative;color:#000}.custom-link:after{content:"";position:absolute;bottom:-3px;left:0;width:100%;height:1px;background-color:#000;transition:width .3s}.custom-link:hover:after{width:50%;background-color:red}
