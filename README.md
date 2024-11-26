@@ -7,7 +7,7 @@
 
 ## 简介 | Introduction  
 在全球气候变化和碳排放管理日益重要的背景下，本系统通过区块链技术的创新应用，提供一个安全、高效、透明的碳核算与交易平台。  
-This system leverages blockchain technology to provide a secure, efficient, and transparent platform for carbon accounting and trading, addressing global climate change and carbon emission management challenges.
+The Carbon Accounting and Trading System based on blockchain technology is designed to help businesses manage their carbon emissions efficiently and transparently. By utilizing blockchain’s immutable ledger, the system ensures the accuracy and security of carbon data while automating carbon quota trading through smart contracts. It provides enterprise users with a platform to submit emission reports, facilitates real-time supervision by third-party regulators, and ensures system transparency and fairness through automated processes. This system contributes to achieving carbon neutrality and supports the global efforts in tackling climate change.
 
 ---
 
