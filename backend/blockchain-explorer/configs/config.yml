@@ -1,0 +1,21 @@
+web:
+  address:  0.0.0.0
+  port:     9997
+  cross_domain:     true
+
+node:
+  #  链和节点更新时间
+  update_time: 30
+  #  节点断开连接时间和新增链时间
+  sync_time:   30
+
+chain:
+  show_config: true
+
+
+db:
+  host: cm_explorer_db
+  port: 3306
+  database: chainmaker_explorer_dev
+  user:   chainmaker
+  passwd: <DB_PASSWORD>

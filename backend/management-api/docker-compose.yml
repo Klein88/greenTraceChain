@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  cm_db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER:-chainmaker}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: chainmaker_dev
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci', '--max_allowed_packet=200M']
+
+  cm_mgmt_server:
+    depends_on:
+      - cm_db
+    image: chainmakerofficial/management-backend:v3.0.0
+    ports:
+      - "9999:9999"
+    restart: always
+
+  cm_mgmt_web:
+    depends_on:
+      - cm_mgmt_server
+    image: chainmakerofficial/management-web:v3.0.0
+    ports:
+      - "8081:80"
+    restart: always
+
+volumes:
+  db_data: {}

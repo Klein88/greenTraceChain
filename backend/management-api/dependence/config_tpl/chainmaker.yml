@@ -1,0 +1,689 @@
+#
+# Copyright (C) BABEC. All rights reserved.
+# Copyright (C) THL A29 Limited, a Tencent company. All rights reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# [*] the represented items could not be modified after startup
+
+# "auth_type" should be consistent among the whole chain configuration files(e.g., bc1.yml and chainmaker.yml)
+# The auth type can be permissionedWithCert, permissionedWithKey, public.
+# By default it is permissionedWithCert.
+# permissionedWithCert: permissioned blockchain, using x.509 certificate to identify members.
+# permissionedWithKey: permissioned blockchain, using public key to identify members.
+# public: public blockchain, using public key to identify members.
+auth_type: "permissionedWithCert" # [*]
+
+# Logger settings
+log:
+  # Logger configuration file path.
+  config_file: ../config/{org_path}/log.yml
+
+# Crypto engine config, support gmssl, tencentsm and tjfoc
+crypto_engine: tjfoc # [*]
+
+# Chains the node currently joined in
+blockchain:
+# chain id and its genesis block file path.
+#  - chainId: chain1
+#    genesis: ../config/{org_path1}/chainconfig/bc1.yml
+#  - chainId: chain2
+#    genesis: ../config/{org_path2}/chainconfig/bc2.yml
+#  - chainId: chain3
+#    genesis: ../config/{org_path3}/chainconfig/bc3.yml
+#  - chainId: chain4
+#    genesis: ../config/{org_path4}/chainconfig/bc4.yml
+
+# Blockchain node settings
+node:
+  # Organization id is the node belongs to.
+  # When the auth type is public, org id is ignored.
+  org_id:            {org_id}  # [*]
+
+  # Private key file path
+  priv_key_file:     ../config/{org_path}/certs/{node_cert_path}.key  # [*]
+
+  # Certificate file path
+  cert_file:         ../config/{org_path}/certs/{node_cert_path}.crt  # [*]
+
+  # Certificate cache size, used to speed up member identity verification.
+  # By default the cache size is 1000.
+  cert_cache_size:   1000
+
+  # CertKeyUsageCheck, used to check if tx sender use the proper certificate to sign transactions
+  cert_key_usage_check: true
+
+  # fast sync settings
+  fast_sync:
+    # Enable it or not, true means do not execute smart contract
+    enabled: true
+
+  # PKCS#11 crypto settings
+  pkcs11:
+    # Enable it or not
+    enabled: false  # [*]
+
+    # Type only support pkcs11 and sdf
+    type: pkcs11
+
+    # Path for the pkcs11 interface file(.so)
+    library: /usr/local/lib64/pkcs11/libupkcs11.so
+
+    # Label for the slot to be used
+    label: HSM
+
+    # HSM Password
+    password: <HSM_PASSWORD>
+
+    # Size for HSM session cache, default value is 10.
+    session_cache_size: 10
+
+    # Hash algorithm is used to calculate SKI.
+    # It can be SHA256 or SM3.
+    hash: "SHA256"  # [*]
+
+  # KMS settings
+  kms:
+    # Enable it or not
+    enabled: false
+
+    # Public cloud or private cloud
+    is_public: true
+
+    # KMS SecretId
+    secret_id: ""
+
+    # KMS SecretKey
+    secret_key: ""
+
+    # KMS server address, ip or dns
+    address: "kms.tencentcloudapi.com"
+
+    # KMS server region
+    region: "ap-guangzhou"
+
+    # KMS sdk scheme, http or https
+    sdk_scheme: "https"
+
+    # Optional settings，style "{k1:v1, k2:v2}".
+    ext_params: ""
+
+# Network Settings
+net:
+  # Network provider, can be libp2p or liquid.
+  # libp2p: using libp2p components to build the p2p module.
+  # liquid: a new p2p network module. We build it from 0 to 1.
+  # This item must be consistent across the blockchain network.
+  provider: LibP2P
+
+  # The address and port the node listens on.
+  # By default, it uses 0.0.0.0 to listen on all network interfaces.
+  listen_addr: /ip4/0.0.0.0/tcp/{net_port}
+
+  # Max stream of a connection.
+  # peer_stream_pool_size: 100
+
+  # Max number of peers the node can connect.
+  # max_peer_count_allow: 20
+
+  # The strategy for eliminating node when the amount of connected peers reaches the max value
+  # It could be: 1 Random, 2 FIFO, 3 LIFO. The default strategy is LIFO.
+  # peer_elimination_strategy: 3
+
+  # The seeds list used to setup network among all the peer seed when system starting.
+  # The connection supervisor will try to dial seed peer whenever the connection is broken.
+  # Example ip format: "/ip4/127.0.0.1/tcp/11301/p2p/"+nodeid
+  # Example dns format："/dns/cm-node1.org/tcp/11301/p2p/"+nodeid
+  seeds:
+
+  # Network tls settings.
+  tls:
+    # Enable tls or not. Currently it can only be true...
+    enabled: true
+
+    # TLS private key file path.
+    priv_key_file: ../config/{org_path}/certs/{net_cert_path}.key
+
+    # TLS Certificate file path.
+    cert_file: ../config/{org_path}/certs/{net_cert_path}.crt
+
+    # TLS enc private key file path. (only for gmtls1.1)
+    priv_enc_key_file: ../config/{org_path}/certs/{net_cert_path}.enc.key
+
+    # TLS enc Certificate file path.
+    cert_enc_file: ../config/{org_path}/certs/{net_cert_path}.enc.crt
+
+      # The blacklist is automatically block the listed seed to connect.
+      # blacklist:
+      # The addresses in blacklist.
+      # The address format can be ip or ip+port.
+      # addresses:
+      #   - "127.0.0.1:11301"
+      #   - "192.168.1.8"
+
+      # The node ids in blacklist.
+      # node_ids:
+    #   - "QmeyNRs2DwWjcHTpcVHoUSaDAAif4VQZ2wQDQAUNDP33gH"
+
+# Transaction pool settings
+# Other tx_pool settings can be found in tx_Pool_config.go
+txpool:
+  # tx_pool type, can be single, normal, batch.
+  # By default the tx_pool type is normal.
+  # Note: please delete dump_tx_wal folder in storage.store_path when change tx_pool type
+  pool_type: "normal"
+
+  # Max common transaction count in tx_pool.
+  # If tx_pool is full, the following transactions will be discarded.
+  max_txpool_size: 50000
+
+  # Max config transaction count in tx_pool.
+  max_config_txpool_size: 10
+
+  # Whether dump unpacked config and common transactions in queue when stop node,
+  # and replay these transactions when restart node.
+  is_dump_txs_in_queue: true
+
+  # Common transaction queue num, only for normal tx_pool.
+  # Note: the num should be an exponent of 2 and less than 256, such as, 1, 2, 4, 8, 16, ..., 256
+  common_queue_num: 8
+
+  # The number of transactions contained in a batch, for normal and batch tx_pool.
+  # Note: make sure that block.block_tx_capacity in bc.yml is an integer multiple of batch_max_size
+  batch_max_size: 100
+
+  # Interval of creating a transaction batch, for normal and batch tx_pool, in millisecond(ms).
+  batch_create_timeout: 50
+
+# RPC service setting
+rpc:
+  # RPC type, can only be grpc now
+  provider: grpc  # [*]
+
+  # RPC host eg. 127.0.0.1,0.0.0.0,localhost
+  host: 0.0.0.0
+  # RPC port
+  port: {rpc_port}
+
+  # Interval of checking trust root changes, in seconds.
+  # If changed, the rpc server's root certificate pool will also change.
+  # Only valid if tls is enabled.
+  # The minium value is 10.
+  check_chain_conf_trust_roots_change_interval: 60
+
+  # API SendRequestSync timeout in seconds.
+  # SendRequestSync return response with tx execution result.
+  # The default value is 60, recommend set it to 60
+  sync_tx_result_timeout: 60
+
+  # restful api gateway
+  gateway:
+    # enable restful api
+    enabled: false
+    # max resp body buffer size, unit: M
+    max_resp_body_size: 16
+
+  # Rate limit related settings
+  # Here we use token bucket to limit rate.
+  ratelimit:
+    # Ratelimit switch. Default is false.
+    enabled: false
+
+    # Rate limit type
+    # 0: limit globally, 1: limit by ip
+    type: 0
+
+    # Token number added to bucket per second.
+    # -1: unlimited, by default is 10000.
+    token_per_second: -1
+
+    # Token bucket size.
+    # -1: unlimited, by default is 10000.
+    token_bucket_size: -1
+
+  # Rate limit settings for subscriber
+  subscriber:
+    ratelimit:
+      token_per_second: 100
+      token_bucket_size: 100
+
+  # RPC TLS settings
+  tls:
+    # TLS mode, can be disable, oneway, twoway.
+    mode:           twoway
+
+    # RPC TLS private key file path
+    priv_key_file:  ../config/{org_path}/certs/{rpc_cert_path}.key
+
+    # RPC TLS public key file path
+    cert_file:      ../config/{org_path}/certs/{rpc_cert_path}.crt
+
+    # RPC enc TLS private key file path (only for gmtls1.1)
+    priv_enc_key_file:  ../config/{org_path}/certs/{rpc_cert_path}.enc.key
+
+    # RPC enc TLS public key file path
+    cert_enc_file:      ../config/{org_path}/certs/{rpc_cert_path}.enc.crt
+
+  # RPC blacklisted ip addresses
+  blacklist:
+    addresses:
+    # - "127.0.0.1"
+
+  # RPC server max send/receive message size in MB
+  max_send_msg_size: 100
+  max_recv_msg_size: 100
+
+  # RPC server disable verify query signature.
+  # set true, the rpcserver will not verify the signature of the TxType_QUERY_CONTRACT tx.
+  # default is false, the rpcserver will do verify the signature of the TxType_QUERY_CONTRACT tx.
+  disable_verify_query_signature: false
+
+tx_filter:
+  # default(store) 0; bird's nest 1; map 2; 3 sharding bird's nest
+  # 3 is recommended.
+  type: 0
+  # sharding bird's nest config
+  # total keys = sharding.length * sharding.birds_nest.length * sharding.birds_nest.cuckoo.max_num_keys
+  sharding:
+    # sharding number
+    length: 5
+    # sharding task timeout in seconds
+    timeout: 60
+
+    # memory storage to disk
+    snapshot:
+      # serialize type
+      # 0 serialization by height interval
+      # 1 serialization by time interval
+      type: 0
+
+      # effective when type is 1
+      timed:
+        # Time interval in seconds
+        interval: 10
+
+      # effective when type is 0
+      block_height:
+        # Block height interval
+        interval: 10
+
+      # effective when type is 1, serialization interval in seconds, compatible with version 221
+      serialize_interval: 10
+
+      # storage to disk file path
+      path: ../data/{org_id}/tx_filter
+    # bird's nest config
+    birds_nest:
+      # bird's nest size
+      length: 10
+      # Transaction filter rules
+      rules:
+        # Absolute expiration time /second
+        # Based on the number of transactions per day, for example, the current total capacity of blockchain transaction
+        # filters is 100 million, and there are 10 million transaction requests per day.
+        #
+        # total keys = sharding.length * sharding.birds_nest.length * sharding.birds_nest.cuckoo.max_num_keys
+        #
+        # absolute expire time = total keys / number of requests per day
+        absolute_expire_time: 172800
+      cuckoo:
+        # 0 NormalKey; 1 TimestampKey
+        key_type: 1
+        # num of tags for each bucket, which is b in paper. tag is fingerprint, which is f in paper.
+        # If you are using a semi-sorted bucket, the default is 4
+        # 2 is recommended.
+        tags_per_bucket: 2
+        # num of bits for each item, which is length of tag(fingerprint)
+        # 11 is recommended.
+        bits_per_item: 11
+        # keys number
+        max_num_keys: 2000000
+        # 0 TableTypeSingle normal single table
+        # 1 TableTypePacked packed table, use semi-sort to save 1 bit per item
+        # 0 is recommended
+        table_type: 0
+  # bird's nest config
+  # total keys = birds_nest.length * birds_nest.cuckoo.max_num_keys
+  birds_nest:
+    # bird's nest size
+    length: 10
+    # memory storage to disk
+    snapshot:
+      # serialize type
+      # 0 serialization by height interval
+      # 1 serialization by time interval
+      type: 0
+      # effective when type is 1
+      timed:
+        # Time interval in seconds
+        interval: 10
+      # effective when type is 0
+      block_height:
+        # Block height interval
+        interval: 10
+
+      # effective when type is 1, serialization interval in seconds, compatible with version 221
+      serialize_interval: 10
+
+      # storage to disk file path
+      path: ../data/{org_id}/tx_filter
+    # Transaction filter rules
+    rules:
+      # Absolute expiration time /second
+      # Based on the number of transactions per day, for example, the current total capacity of blockchain transaction
+      # filters is 100 million, and there are 10 million transaction requests per day.
+      #
+      # total keys = sharding.length * sharding.birds_nest.length * sharding.birds_nest.cuckoo.max_num_keys
+      #
+      # absolute expire time = total keys / number of requests per day
+      absolute_expire_time: 172800
+    cuckoo:
+      # 0 NormalKey; 1 TimestampKey
+      key_type: 1
+      # num of tags for each bucket, which is b in paper. tag is fingerprint, which is f in paper.
+      # If you are using a semi-sorted bucket, the default is 4
+      # 2 is recommended.
+      tags_per_bucket: 2
+      # num of bits for each item, which is length of tag(fingerprint)
+      # 11 is recommended.
+      bits_per_item: 11
+      # keys number
+      max_num_keys: 2000000
+      # 0 TableTypeSingle normal single table
+      # 1 TableTypePacked packed table, use semi-sort to save 1 bit per item
+      # 0 is recommended
+      table_type: 0
+
+# Monitor related settings
+monitor:
+  # Monitor service switch, default is false.
+  enabled: false
+
+  # Monitor service port
+  port: {monitor_port}
+
+# PProf Settings
+pprof:
+  # If pprof is enabled or not
+  enabled: false
+
+  # PProf port
+  port: {pprof_port}
+
+# Consensus related settings
+consensus:
+  raft:
+    # Take a snapshot based on the set the number of blocks.
+    # If raft nodes change, a snapshot is taken immediately.
+    snap_count: 10
+
+    # Saving wal asynchronously switch. Default is true.
+    async_wal_save: true
+
+    # Min time unit in rate election and heartbeat.
+    ticker: 1
+
+# Scheduler related settings
+scheduler:
+  # whether log the txRWSet map in debug mode
+  rwset_log: false
+
+# Storage config settings
+# Contains blockDb, stateDb, historyDb, resultDb, contractEventDb
+#
+# blockDb: block transaction data,                          support leveldb, mysql, badgerdb, tikvdb
+# stateDb: world state data,                                support leveldb, mysql, badgerdb, tikvdb
+# historyDb: world state change history of transactions,    support leveldb, mysql, badgerdb, tikvdb
+# resultDb: transaction execution results data,             support leveldb, mysql, badgerdb, tikvdb
+# contractEventDb: contract emit event data,                support mysql
+#
+# provider, sqldb_type cannot be changed after startup.
+# store_path, dsn the content cannot be changed after startup.
+storage:
+  # Default store path
+  store_path: ../data/{org_id}/ledgerData1 # [*]
+
+  # Prefix for mysql db name
+  # db_prefix: org1_  # [*]
+
+  # Minimum block height not allowed to be archived
+  unarchive_block_height: 300000
+
+  # Archive dir scan interval time(s), default: 10(s)
+  archive_check_interval: 10
+
+  # Restore data merge on chain data wait time,
+  # restore action start after "restoreBlock" action finished "restore_interval" time(s), default: 60(s)
+  restore_interval: 60
+
+  # Symmetric encryption algorithm for writing data to disk. can be sm4 or aes
+  # encryptor: sm4    # [*]
+
+  # Disable block file db, default: true
+  disable_block_file_db: false  # [*]
+
+  # async write block in file block db to disk (by blockfiledb or wal), default: false, so default is sync write disk
+  logdb_segment_async: false
+
+  # file size of stored block file
+  # if disable_block_file_db: false, we use block filedb, this means .fdb file size(MB), default: 64
+  # if disable_block_file_db: true, we use wal, this means .wal file size(MB), default: 20
+  logdb_segment_size: 128
+
+  # read bfdb block file time out(ms), default: 1000
+  read_bfdb_timeout: 1000
+
+  # bigfilter config, default false
+  enable_bigfilter: false
+
+  # effective when enable_bigfilter is true
+  bigfilter_config:
+    # redis host:port
+    redis_hosts_port: "127.0.0.1:6300,127.0.0.1:6301"
+
+    # redis password
+    redis_password: abcpass
+
+    # support max transaction capacity
+    tx_capacity: 1000000000
+
+    # false postive rate
+    fp_rate: 0.000000001
+
+  # RWC config, default false
+  enable_rwc: true
+
+  # effective when enable_rwc is true, default 1000000
+  # suggest greater than max_txpool_size*1.1
+  rolling_window_cache_capacity: 55000
+
+  # Symmetric encryption key:16 bytes key
+  # If pkcs11 is enabled, it is the keyID
+  # encrypt_key: "1234567890123456"
+
+  # 0 common write，1 quick write
+  write_block_type: 0
+
+  # record DB slow log (INFO level) when query spend time more than this value (millisecond), 0 means no record
+  slow_log: 0
+
+  # state db cache
+  disable_state_cache: false # default enable state cache
+
+  # effective when disable_state_cache is false
+  state_cache_config:
+    # key/value ttl time, ns
+    life_window: 3000000000000
+
+    # interval between removing expired keys and values(clean up).
+    clean_window: 1000000000
+
+    # max size of entry in bytes.
+    max_entry_size: 500
+
+    # max cache size MB
+    hard_max_cache_size: 1024
+
+  # Block db config
+  blockdb_config:
+    # Databases type support leveldb, sql, badgerdb, tikvdb
+    provider: leveldb # [*]
+    # If provider is leveldb, leveldb_config should not be null.
+    leveldb_config:
+      # LevelDb store path
+      store_path: ../data/{org_id}/block
+
+      # Example for sql provider
+      # Databases type support leveldb, sql, badgerdb, tikvdb
+      # provider: sql # [*]
+      # If provider is sql, sqldb_config should not be null.
+      # sqldb_config:
+      # Sql db type, can be mysql, sqlite. sqlite only for test
+      # sqldb_type: mysql # # [*]
+      # Mysql connection info, the database name is not required. such as:  root:admin@tcp(127.0.0.1:3306)/
+      # dsn: root:password@tcp(127.0.0.1:3306)/
+
+      # Example for badgerdb provider
+      # Databases type support leveldb, sql, badgerdb, tikvdb
+      # provider: badgerdb
+      # If provider is badgerdb, badgerdb_config should not be null.
+      # badgerdb_config:
+      # BadgerDb store path
+      # store_path: ../data/wx-org1.chainmaker.org/history
+      # Whether compression is enabled for stored data, default is 0: disabled
+      # compression: 0
+      # Key and value are stored separately when value is greater than this byte, default is 1024 * 10
+      # value_threshold: 256
+      # Number of key value pairs written in batch. default is 128
+      # write_batch_size: 1024
+
+      # Example for tikv provider
+      # provider: tikvdb
+      # If provider is tikvdb, tikvdb_config should not be null.
+      # tikvdb_config:
+      # db_prefix: "node1_" #default is ""
+      # endpoints: "127.0.0.1:2379" # tikv pd server url，support multi url, example :"192.168.1.2:2379,192.168.1.3:2379"
+      # max_batch_count: 128  # max tikv commit batch size, default: 128
+      # grpc_connection_count: 16 # chainmaker and tikv connect count, default: 4
+      # grpc_keep_alive_time: 10 # keep connnet alive count, default: 10
+      # grpc_keep_alive_timeout: 3  # keep connnect alive time, default: 3
+      # write_batch_size: 128 # commit tikv bacth size each time, default: 128
+  # State db config
+  statedb_config:
+    provider: leveldb
+    leveldb_config:
+      store_path: ../data/{org_id}/state
+
+  # History db config, default enable history db
+  disable_historydb: false
+  historydb_config:
+    provider: leveldb
+    disable_key_history: false
+    disable_contract_history: true
+    disable_account_history: true
+    leveldb_config:
+      store_path: ../data/{org_id}/history
+
+  # Result db config, default enable result db
+  disable_resultdb: false
+  resultdb_config:
+    provider: leveldb
+    leveldb_config:
+      store_path: ../data/{org_id}/result
+
+  # Disable contract event database or not. If it is false, contract_eventdb_config must be mysql
+  disable_contract_eventdb: true
+  # Contract event db config
+  contract_eventdb_config:
+    # Event db only support sql
+    provider: sql
+    # Sql db config
+    sqldb_config:
+      # Event db only support mysql
+      sqldb_type: mysql
+      # Mysql connection info, such as:  root:admin@tcp(127.0.0.1:3306)/
+      dsn: root:password@tcp(127.0.0.1:3306)/
+
+# Contract Virtual Machine(VM) configs
+vm:
+  # Common configs of docker vm
+  common:
+    max_send_msg_size: 100
+    # Grpc max receive message size, Default size is 100, unit: MB
+    max_recv_msg_size: 100
+    # Grpc dialing timeout, default size is 10, uint: s
+    dial_timeout: 10
+    #  Configs of docker runtime server (handle messages with contract sandbox)
+    runtime_server:
+      # runtime server host, default 127.0.0.1
+      # host: 127.0.0.1
+      # Runtime server port, default 32351
+      port: {vm_go_runtime_port}
+
+  # Golang runtime in docker container
+  go:
+    # Enable docker go virtual machine, default: false
+    enable: {enable_vm_go}
+    # Mount data path in chainmaker, include contracts, uds socks
+    data_mount_path: ../data/{org_id}/go
+    # Mount log path in chainmaker
+    log_mount_path: ../log/{org_id}/go
+    # Communication protocol, used for chainmaker and docker manager communication
+    # 1. tcp: docker vm uses TCP to communicate with chain
+    # 2. uds: docker vm uses unix domain socket to communicate with chain
+    protocol: tcp
+    # If use a customized VM configuration file, supplement it; else, do not configure
+    # Priority: chainmaker.yml > vm.yml > default settings
+    # dockervm_config_path: /config_path/vm.yml
+    # Whether to print log on terminal
+    log_in_console: false
+    # Log level of docker vm go
+    log_level: INFO
+
+    # max process num for execute original txs
+    max_concurrency: 20
+
+    # Configs of contract engine server (handle messages with contract engine)
+    contract_engine:
+      # Docker vm contract engine server host, default 127.0.0.1
+      host: 127.0.0.1
+      # Docker vm contract engine server port, default 22351
+      port: {vm_go_engine_port}
+      # Max number of connection created to connect docker vm service
+      max_connection: 5
+
+
+  # Java runtime in docker container
+  java:
+    # Enable docker java virtual machine, default: false
+    enable: {enable_docker_java}
+
+    # Mount data path in chainmaker, include contracts, uds socks
+    data_mount_path: ../data/{org_id}/java
+
+    # Mount log path in chainmaker
+    log_mount_path: ../log/{org_id}/java
+
+    # If use a customized VM configuration file, supplement it; else, do not configure
+    # Priority: chainmaker.yml > vm.yml > default settings
+    # dockervm_config_path: /config_path/vm.yml
+    # Whether to print log on terminal
+    log_in_console: false
+
+    # Log level of docker vm java
+    log_level: INFO
+
+    # max process num for execute original txs
+    max_concurrency: 20
+
+    # Configs of contract engine server (handle messages with contract engine)
+    contract_engine:
+      # Docker vm contract engine server host, default 127.0.0.1
+      host: 127.0.0.1
+
+      # Docker vm contract engine server port, default 23351
+      port: {docker_java_engine_port}
+
+      # Max number of connection created to connect docker vm engine service
+      max_connection: 5

@@ -1,0 +1,5 @@
+url: localhost        # Change to your database host
+userName: root        # Change to your database user
+password: <DB_PASSWORD>
+dbname: carbon
+post: 3306

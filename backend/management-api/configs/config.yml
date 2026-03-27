@@ -1,0 +1,28 @@
+web:
+  address:  0.0.0.0
+  port:     9999
+  cross_domain:     true
+  session_age: 86400
+  captcha:
+    height: 80
+    width: 200
+    noise_count: 5
+    length: 4
+
+  # 错误提示语言，取值：0-英文，1-中文
+  errmsg_lang: 1
+  # 加载链信息间隔时间，单位：秒
+  load_period_seconds : 60
+  # 默认admin用户密码，和重置用户密码
+  password: <ADMIN_DEFAULT_PASSWORD>
+  # 日志agent 的端口
+  agent_port: 22301
+  # 上报日志链接
+  report_url: https://bugreport.chainmaker.org.cn/v1/reportLogs
+
+db:
+  host: cm_db
+  port: 3306
+  database: chainmaker_dev
+  user:   chainmaker
+  passwd: <DB_PASSWORD>

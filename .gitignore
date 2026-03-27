@@ -1,0 +1,44 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Node
+node_modules/
+dist/
+.npmrc
+npminstall-debug.log
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Compiled binaries
+backend/chainmaker-service/src/chainmakerbackend
+backend/management-api/dependence/bin/
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Blockchain private keys and certificates
+*.key
+*.pem
+crypto-config/
+
+# Logs
+*.log
+nohup.out
+sdk.log*
